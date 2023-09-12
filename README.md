@@ -1,2 +1,0 @@
-# Nacional
-continuar programando
