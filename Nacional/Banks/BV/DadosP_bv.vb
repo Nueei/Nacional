@@ -1,4 +1,4 @@
-﻿Public Class DadosP_bv
+﻿Public Class DadosP_BV
     Dim tipoVeiculo As String
     Dim modeloVeiculo As String
     Dim primaryColor As Color = My.Settings.primaryColor

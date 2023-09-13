@@ -103,7 +103,8 @@ Namespace My
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
         Public Property primaryColor() As Global.System.Drawing.Color
             Get
                 Return CType(Me("primaryColor"),Global.System.Drawing.Color)
@@ -114,7 +115,8 @@ Namespace My
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
         Public Property secondaryColor() As Global.System.Drawing.Color
             Get
                 Return CType(Me("secondaryColor"),Global.System.Drawing.Color)

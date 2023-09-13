@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class DadosP_bv
+Partial Class DadosP_BV
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class DadosP_bv
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DadosP_bv))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DadosP_BV))
         Me.cpf_panel = New System.Windows.Forms.Panel()
         Me.nome_panel = New System.Windows.Forms.Panel()
         Me.cpf = New System.Windows.Forms.TextBox()
@@ -304,7 +304,7 @@ Partial Class DadosP_bv
         '
         Me.CheckBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(30, 43)
+        Me.CheckBox1.Location = New System.Drawing.Point(29, 34)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(715, 43)
         Me.CheckBox1.TabIndex = 16
@@ -418,7 +418,7 @@ Partial Class DadosP_bv
         Me.last_panel.Size = New System.Drawing.Size(790, 171)
         Me.last_panel.TabIndex = 13
         '
-        'DadosP_bv
+        'DadosP_BV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -433,7 +433,7 @@ Partial Class DadosP_bv
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "DadosP_bv"
+        Me.Name = "DadosP_BV"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()

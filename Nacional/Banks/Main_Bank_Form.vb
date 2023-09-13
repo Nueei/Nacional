@@ -7,9 +7,7 @@
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Panel4.Click, Label3.Click
         Politicas_USO.ShowDialog()
-
     End Sub
-
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         If MsgBox("Deseja realmente encerrar a aplicação?", MsgBoxStyle.OkCancel + MsgBoxStyle.Information, "Atenção!") = DialogResult.OK Then
             End
@@ -57,11 +55,11 @@
             LimparControle()
             Select Case AtualBank
                 Case "BV"
-                    DadosP_bv.TopLevel = False
-                    DadosP_bv.Parent = center_panel
-                    DadosP_bv.WindowState = FormWindowState.Maximized
-                    DadosP_bv.Location = New Point(0, 0)
-                    DadosP_bv.Show()
+                    DadosP_BV.TopLevel = False
+                    DadosP_BV.Parent = center_panel
+                    DadosP_BV.WindowState = FormWindowState.Maximized
+                    DadosP_BV.Location = New Point(0, 0)
+                    DadosP_BV.Show()
             End Select
         End If
     End Sub

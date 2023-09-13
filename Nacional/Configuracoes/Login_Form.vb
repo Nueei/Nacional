@@ -36,6 +36,7 @@ Public Class Login_form
             End If
             If pass = ds.Tables(0).Rows(0)("pass").ToString Then
                 MsgBox("Logado com sucesso!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Sucesso.")
+                Break_BRUTEFORCE.Stop()
                 Aleatorizar_banco.Start()
                 PodeAlterar = True
             Else
@@ -55,8 +56,8 @@ Public Class Login_form
         If bf <= 0 Then
             Break_BRUTEFORCE.Stop()
             Extract_pass.Dispose()
-            End
             MsgBox("Tempo limite esgotado." + vbNewLine + "Encerrando aplicação", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
+            End
         End If
     End Sub
 
@@ -101,7 +102,7 @@ Public Class Login_form
     Sub ResultBV()
         My.Settings.atualBank = "BV"
         My.Settings.secondaryColor = Color.FromArgb(75, 115, 218)
-        My.Settings.primaryColor = Color.White
+        '   My.Settings.primaryColor = Color.White
         Main_Bank_Form.ShowDialog()
         Me.Close()
     End Sub

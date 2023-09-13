@@ -15,10 +15,10 @@
       <Value Profile="(Default)">COD 3</Value>
     </Setting>
     <Setting Name="primaryColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="secondaryColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="atualBank" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
