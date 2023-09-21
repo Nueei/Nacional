@@ -39,6 +39,7 @@ Partial Class Main_Bank_Form
         Me.load_pic = New System.Windows.Forms.PictureBox()
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
+        Me.InputLog = New System.ComponentModel.BackgroundWorker()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,6 +212,9 @@ Partial Class Main_Bank_Form
         '
         Me.count_timer.Interval = 1
         '
+        'InputLog
+        '
+        '
         'Main_Bank_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -252,4 +256,5 @@ Partial Class Main_Bank_Form
     Friend WithEvents load_pic As PictureBox
     Friend WithEvents initial_timer As Timer
     Friend WithEvents count_timer As Timer
+    Friend WithEvents InputLog As System.ComponentModel.BackgroundWorker
 End Class

@@ -137,6 +137,54 @@ Namespace My
                 Me("atualBank") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property tipoVeiculo() As String
+            Get
+                Return CType(Me("tipoVeiculo"),String)
+            End Get
+            Set
+                Me("tipoVeiculo") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property valorVeiculo() As Integer
+            Get
+                Return CType(Me("valorVeiculo"),Integer)
+            End Get
+            Set
+                Me("valorVeiculo") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property anoVeiculo() As Integer
+            Get
+                Return CType(Me("anoVeiculo"),Integer)
+            End Get
+            Set
+                Me("anoVeiculo") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property modeloVeiculo() As String
+            Get
+                Return CType(Me("modeloVeiculo"),String)
+            End Get
+            Set
+                Me("modeloVeiculo") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

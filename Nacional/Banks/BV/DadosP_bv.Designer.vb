@@ -35,7 +35,7 @@ Partial Class DadosP_BV
         Me.marca = New System.Windows.Forms.TextBox()
         Me.ano = New System.Windows.Forms.TextBox()
         Me.entrada = New System.Windows.Forms.TextBox()
-        Me.valorveiculo = New System.Windows.Forms.TextBox()
+        Me.valorveiculo_txt = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -170,14 +170,14 @@ Partial Class DadosP_BV
         Me.entrada.Size = New System.Drawing.Size(252, 17)
         Me.entrada.TabIndex = 13
         '
-        'valorveiculo
+        'valorveiculo_txt
         '
-        Me.valorveiculo.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valorveiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.valorveiculo.Location = New System.Drawing.Point(29, 42)
-        Me.valorveiculo.Name = "valorveiculo"
-        Me.valorveiculo.Size = New System.Drawing.Size(252, 17)
-        Me.valorveiculo.TabIndex = 12
+        Me.valorveiculo_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valorveiculo_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.valorveiculo_txt.Location = New System.Drawing.Point(29, 42)
+        Me.valorveiculo_txt.Name = "valorveiculo_txt"
+        Me.valorveiculo_txt.Size = New System.Drawing.Size(252, 17)
+        Me.valorveiculo_txt.TabIndex = 12
         '
         'Label8
         '
@@ -322,7 +322,7 @@ Partial Class DadosP_BV
         Me.Panel5.Controls.Add(Me.marca)
         Me.Panel5.Controls.Add(Me.ano)
         Me.Panel5.Controls.Add(Me.entrada)
-        Me.Panel5.Controls.Add(Me.valorveiculo)
+        Me.Panel5.Controls.Add(Me.valorveiculo_txt)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Controls.Add(Me.Label6)
@@ -400,7 +400,7 @@ Partial Class DadosP_BV
         'Panel12
         '
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(207, Byte), Integer))
+        Me.Panel12.BackColor = System.Drawing.Color.Silver
         Me.Panel12.Controls.Add(Me.Label9)
         Me.Panel12.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel12.Location = New System.Drawing.Point(283, 120)
@@ -417,6 +417,7 @@ Partial Class DadosP_BV
         Me.last_panel.Name = "last_panel"
         Me.last_panel.Size = New System.Drawing.Size(790, 171)
         Me.last_panel.TabIndex = 13
+        Me.last_panel.Visible = False
         '
         'DadosP_BV
         '
@@ -467,7 +468,7 @@ Partial Class DadosP_BV
     Friend WithEvents marca As TextBox
     Friend WithEvents ano As TextBox
     Friend WithEvents entrada As TextBox
-    Friend WithEvents valorveiculo As TextBox
+    Friend WithEvents valorveiculo_txt As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label

@@ -7,6 +7,8 @@ Public Class Login_form
     Dim timeToRnd As Integer = 20
     Dim PodeAlterar = False
     Private Sub Me_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Settings.Reset()
+
         animacao_aguarde.Start()
         '/*/*/*/*/*/*/*/*/*\*\*\*\*\*\*\*\*\*\
         Break_BRUTEFORCE.Start()
@@ -71,16 +73,19 @@ Public Class Login_form
     Protected Overrides Function ProcessCmdKey(ByRef m As Message, ByVal keyData As Keys) As Boolean
         Select Case keyData
             Case Keys.Alt Or Keys.F1 And PodeAlterar = True
+                Aleatorizar_banco.Stop()
+                animacao_aguarde.Stop()
                 If Finan_config.ShowDialog = DialogResult.OK Then
-                    Aleatorizar_banco.Stop()
-                    animacao_aguarde.Stop()
-                Else
                     Aleatorizar_banco.Start()
-                    Aleatorizar_banco.Stop()
+                    animacao_aguarde.Start()
                 End If
                 Return True
             Case Keys.F1 And PodeAlterar = True
-                resultBV()
+                Aleatorizar_banco.Stop()
+                animacao_aguarde.Stop()
+                PodeAlterar = False
+                '/-/-/-/-/-/-/-\-\-\-\-\-\-\
+                ResultBV()
                 Return True
             Case Else
                 Return False
@@ -102,8 +107,8 @@ Public Class Login_form
     Sub ResultBV()
         My.Settings.atualBank = "BV"
         My.Settings.secondaryColor = Color.FromArgb(75, 115, 218)
-        '   My.Settings.primaryColor = Color.White
-        Main_Bank_Form.ShowDialog()
+
+        Main_Bank_Form.Show()
         Me.Close()
     End Sub
 End Class

@@ -17,3 +17,4 @@ C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.exe
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.xml
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.pdb
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.DadosP_BV.resources
+C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.Result_1_finan.resources

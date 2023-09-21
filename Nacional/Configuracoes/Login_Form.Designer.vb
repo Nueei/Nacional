@@ -65,6 +65,9 @@ Partial Class Login_form
         Me.Aguarde_lbl.TabIndex = 2
         Me.Aguarde_lbl.Text = "Aguarde"
         '
+        'Extract_pass
+        '
+        '
         'Break_BRUTEFORCE
         '
         Me.Break_BRUTEFORCE.Interval = 1000
@@ -73,7 +76,7 @@ Partial Class Login_form
         '
         Me.Aleatorizar_banco.Interval = 1000
         '
-        'Login_Form
+        'Login_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -83,7 +86,7 @@ Partial Class Login_form
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Login_Form"
+        Me.Name = "Login_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

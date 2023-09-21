@@ -29,19 +29,19 @@ Partial Class Result_1_finan
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.vparcela60 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.vparcela48 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.vparcela36 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.vparcela24 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.vparcela12 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -54,23 +54,22 @@ Partial Class Result_1_finan
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Label31 = New System.Windows.Forms.Label()
+        Me.exibirParcela = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
+        Me.totalSemSeguro = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Label26 = New System.Windows.Forms.Label()
+        Me.lblVTarifas = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
+        Me.lblVFinanciado = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.vLiquidoLiberado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lblEntrada = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel17 = New System.Windows.Forms.Panel()
@@ -96,7 +95,6 @@ Partial Class Result_1_finan
         Me.Panel15.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel17.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
@@ -166,7 +164,7 @@ Partial Class Result_1_finan
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Controls.Add(Me.vparcela60)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel3.Location = New System.Drawing.Point(26, 330)
@@ -174,16 +172,16 @@ Partial Class Result_1_finan
         Me.Panel3.Size = New System.Drawing.Size(85, 55)
         Me.Panel3.TabIndex = 4
         '
-        'Label6
+        'vparcela60
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(-1, 30)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(66, 13)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.vparcela60.AutoSize = True
+        Me.vparcela60.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.vparcela60.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vparcela60.Location = New System.Drawing.Point(-1, 30)
+        Me.vparcela60.Name = "vparcela60"
+        Me.vparcela60.Size = New System.Drawing.Size(66, 13)
+        Me.vparcela60.TabIndex = 0
+        Me.vparcela60.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label5
         '
@@ -198,7 +196,7 @@ Partial Class Result_1_finan
         'Panel4
         '
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.vparcela48)
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel4.Location = New System.Drawing.Point(117, 330)
@@ -206,16 +204,16 @@ Partial Class Result_1_finan
         Me.Panel4.Size = New System.Drawing.Size(85, 55)
         Me.Panel4.TabIndex = 4
         '
-        'Label7
+        'vparcela48
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(-1, 30)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(66, 13)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.vparcela48.AutoSize = True
+        Me.vparcela48.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.vparcela48.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vparcela48.Location = New System.Drawing.Point(-1, 30)
+        Me.vparcela48.Name = "vparcela48"
+        Me.vparcela48.Size = New System.Drawing.Size(66, 13)
+        Me.vparcela48.TabIndex = 0
+        Me.vparcela48.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label8
         '
@@ -225,12 +223,12 @@ Partial Class Result_1_finan
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 13)
         Me.Label8.TabIndex = 0
-        Me.Label8.Text = "60x de"
+        Me.Label8.Text = "48x de"
         '
         'Panel5
         '
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.Label9)
+        Me.Panel5.Controls.Add(Me.vparcela36)
         Me.Panel5.Controls.Add(Me.Label10)
         Me.Panel5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel5.Location = New System.Drawing.Point(208, 330)
@@ -238,16 +236,16 @@ Partial Class Result_1_finan
         Me.Panel5.Size = New System.Drawing.Size(85, 55)
         Me.Panel5.TabIndex = 4
         '
-        'Label9
+        'vparcela36
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(-1, 30)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(66, 13)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.vparcela36.AutoSize = True
+        Me.vparcela36.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.vparcela36.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vparcela36.Location = New System.Drawing.Point(-1, 30)
+        Me.vparcela36.Name = "vparcela36"
+        Me.vparcela36.Size = New System.Drawing.Size(66, 13)
+        Me.vparcela36.TabIndex = 0
+        Me.vparcela36.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label10
         '
@@ -257,12 +255,12 @@ Partial Class Result_1_finan
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(39, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "60x de"
+        Me.Label10.Text = "36x de"
         '
         'Panel6
         '
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Controls.Add(Me.Label11)
+        Me.Panel6.Controls.Add(Me.vparcela24)
         Me.Panel6.Controls.Add(Me.Label12)
         Me.Panel6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel6.Location = New System.Drawing.Point(299, 330)
@@ -270,16 +268,16 @@ Partial Class Result_1_finan
         Me.Panel6.Size = New System.Drawing.Size(85, 55)
         Me.Panel6.TabIndex = 4
         '
-        'Label11
+        'vparcela24
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(-1, 30)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(66, 13)
-        Me.Label11.TabIndex = 0
-        Me.Label11.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.vparcela24.AutoSize = True
+        Me.vparcela24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.vparcela24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vparcela24.Location = New System.Drawing.Point(-1, 30)
+        Me.vparcela24.Name = "vparcela24"
+        Me.vparcela24.Size = New System.Drawing.Size(66, 13)
+        Me.vparcela24.TabIndex = 0
+        Me.vparcela24.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label12
         '
@@ -289,12 +287,12 @@ Partial Class Result_1_finan
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(39, 13)
         Me.Label12.TabIndex = 0
-        Me.Label12.Text = "60x de"
+        Me.Label12.Text = "24x de"
         '
         'Panel7
         '
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel7.Controls.Add(Me.Label13)
+        Me.Panel7.Controls.Add(Me.vparcela12)
         Me.Panel7.Controls.Add(Me.Label14)
         Me.Panel7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel7.Location = New System.Drawing.Point(390, 330)
@@ -302,16 +300,16 @@ Partial Class Result_1_finan
         Me.Panel7.Size = New System.Drawing.Size(85, 55)
         Me.Panel7.TabIndex = 4
         '
-        'Label13
+        'vparcela12
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(-1, 30)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(66, 13)
-        Me.Label13.TabIndex = 0
-        Me.Label13.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.vparcela12.AutoSize = True
+        Me.vparcela12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.vparcela12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vparcela12.Location = New System.Drawing.Point(-1, 30)
+        Me.vparcela12.Name = "vparcela12"
+        Me.vparcela12.Size = New System.Drawing.Size(66, 13)
+        Me.vparcela12.TabIndex = 0
+        Me.vparcela12.Text = "R$ 9.999,00" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label14
         '
@@ -321,7 +319,7 @@ Partial Class Result_1_finan
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 13)
         Me.Label14.TabIndex = 0
-        Me.Label14.Text = "60x de"
+        Me.Label14.Text = "12x de"
         '
         'Panel12
         '
@@ -442,9 +440,9 @@ Partial Class Result_1_finan
         '
         'Panel15
         '
-        Me.Panel15.Controls.Add(Me.Label31)
+        Me.Panel15.Controls.Add(Me.exibirParcela)
         Me.Panel15.Controls.Add(Me.Label29)
-        Me.Panel15.Controls.Add(Me.Label28)
+        Me.Panel15.Controls.Add(Me.totalSemSeguro)
         Me.Panel15.Controls.Add(Me.Label27)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel15.Location = New System.Drawing.Point(0, 243)
@@ -452,15 +450,15 @@ Partial Class Result_1_finan
         Me.Panel15.Size = New System.Drawing.Size(350, 109)
         Me.Panel15.TabIndex = 5
         '
-        'Label31
+        'exibirParcela
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(125, 36)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(199, 25)
-        Me.Label31.TabIndex = 0
-        Me.Label31.Text = "48x de R$ 9.999,99"
+        Me.exibirParcela.AutoSize = True
+        Me.exibirParcela.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.exibirParcela.Location = New System.Drawing.Point(125, 36)
+        Me.exibirParcela.Name = "exibirParcela"
+        Me.exibirParcela.Size = New System.Drawing.Size(199, 25)
+        Me.exibirParcela.TabIndex = 0
+        Me.exibirParcela.Text = "48x de R$ 9.999,99"
         '
         'Label29
         '
@@ -471,15 +469,15 @@ Partial Class Result_1_finan
         Me.Label29.TabIndex = 0
         Me.Label29.Text = "Parcela"
         '
-        'Label28
+        'totalSemSeguro
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(212, 8)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(84, 13)
-        Me.Label28.TabIndex = 0
-        Me.Label28.Text = "R$ 99.999,99"
+        Me.totalSemSeguro.AutoSize = True
+        Me.totalSemSeguro.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalSemSeguro.Location = New System.Drawing.Point(212, 8)
+        Me.totalSemSeguro.Name = "totalSemSeguro"
+        Me.totalSemSeguro.Size = New System.Drawing.Size(84, 13)
+        Me.totalSemSeguro.TabIndex = 0
+        Me.totalSemSeguro.Text = "R$ 99.999,99"
         '
         'Label27
         '
@@ -501,13 +499,13 @@ Partial Class Result_1_finan
         '
         'Panel13
         '
-        Me.Panel13.Controls.Add(Me.Label26)
+        Me.Panel13.Controls.Add(Me.lblVTarifas)
         Me.Panel13.Controls.Add(Me.Label22)
-        Me.Panel13.Controls.Add(Me.Label25)
+        Me.Panel13.Controls.Add(Me.lblVFinanciado)
         Me.Panel13.Controls.Add(Me.Label21)
-        Me.Panel13.Controls.Add(Me.Label24)
+        Me.Panel13.Controls.Add(Me.vLiquidoLiberado)
         Me.Panel13.Controls.Add(Me.Label20)
-        Me.Panel13.Controls.Add(Me.Label23)
+        Me.Panel13.Controls.Add(Me.lblEntrada)
         Me.Panel13.Controls.Add(Me.Label19)
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel13.Location = New System.Drawing.Point(0, 110)
@@ -515,15 +513,15 @@ Partial Class Result_1_finan
         Me.Panel13.Size = New System.Drawing.Size(350, 132)
         Me.Panel13.TabIndex = 3
         '
-        'Label26
+        'lblVTarifas
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(212, 107)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(84, 13)
-        Me.Label26.TabIndex = 0
-        Me.Label26.Text = "R$ 99.999,99"
+        Me.lblVTarifas.AutoSize = True
+        Me.lblVTarifas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVTarifas.Location = New System.Drawing.Point(212, 107)
+        Me.lblVTarifas.Name = "lblVTarifas"
+        Me.lblVTarifas.Size = New System.Drawing.Size(84, 13)
+        Me.lblVTarifas.TabIndex = 0
+        Me.lblVTarifas.Text = "R$ 99.999,99"
         '
         'Label22
         '
@@ -534,15 +532,15 @@ Partial Class Result_1_finan
         Me.Label22.TabIndex = 0
         Me.Label22.Text = "Valor Aproximado de tarifas"
         '
-        'Label25
+        'lblVFinanciado
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(212, 85)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(84, 13)
-        Me.Label25.TabIndex = 0
-        Me.Label25.Text = "R$ 99.999,99"
+        Me.lblVFinanciado.AutoSize = True
+        Me.lblVFinanciado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVFinanciado.Location = New System.Drawing.Point(212, 85)
+        Me.lblVFinanciado.Name = "lblVFinanciado"
+        Me.lblVFinanciado.Size = New System.Drawing.Size(84, 13)
+        Me.lblVFinanciado.TabIndex = 0
+        Me.lblVFinanciado.Text = "R$ 99.999,99"
         '
         'Label21
         '
@@ -553,15 +551,15 @@ Partial Class Result_1_finan
         Me.Label21.TabIndex = 0
         Me.Label21.Text = "Valor Financiado"
         '
-        'Label24
+        'vLiquidoLiberado
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(212, 35)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(84, 13)
-        Me.Label24.TabIndex = 0
-        Me.Label24.Text = "R$ 99.999,99"
+        Me.vLiquidoLiberado.AutoSize = True
+        Me.vLiquidoLiberado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vLiquidoLiberado.Location = New System.Drawing.Point(212, 35)
+        Me.vLiquidoLiberado.Name = "vLiquidoLiberado"
+        Me.vLiquidoLiberado.Size = New System.Drawing.Size(84, 13)
+        Me.vLiquidoLiberado.TabIndex = 0
+        Me.vLiquidoLiberado.Text = "R$ 99.999,99"
         '
         'Label20
         '
@@ -572,15 +570,15 @@ Partial Class Result_1_finan
         Me.Label20.TabIndex = 0
         Me.Label20.Text = "Valor Liquido liberado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Label23
+        'lblEntrada
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(212, 13)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(84, 13)
-        Me.Label23.TabIndex = 0
-        Me.Label23.Text = "R$ 99.999,99"
+        Me.lblEntrada.AutoSize = True
+        Me.lblEntrada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEntrada.Location = New System.Drawing.Point(212, 13)
+        Me.lblEntrada.Name = "lblEntrada"
+        Me.lblEntrada.Size = New System.Drawing.Size(84, 13)
+        Me.lblEntrada.TabIndex = 0
+        Me.lblEntrada.Text = "R$ 99.999,99"
         '
         'Label19
         '
@@ -602,7 +600,6 @@ Partial Class Result_1_finan
         '
         'Panel10
         '
-        Me.Panel10.Controls.Add(Me.PictureBox1)
         Me.Panel10.Controls.Add(Me.Label17)
         Me.Panel10.Controls.Add(Me.Label18)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
@@ -611,20 +608,12 @@ Partial Class Result_1_finan
         Me.Panel10.Size = New System.Drawing.Size(350, 109)
         Me.Panel10.TabIndex = 1
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(41, 37)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Label17
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(3, 47)
+        Me.Label17.Location = New System.Drawing.Point(3, 56)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(176, 15)
         Me.Label17.TabIndex = 1
@@ -635,7 +624,7 @@ Partial Class Result_1_finan
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.Gray
-        Me.Label18.Location = New System.Drawing.Point(51, 15)
+        Me.Label18.Location = New System.Drawing.Point(59, 15)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(246, 20)
         Me.Label18.TabIndex = 1
@@ -788,7 +777,6 @@ Partial Class Result_1_finan
         Me.Panel13.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel17.ResumeLayout(False)
         Me.Panel17.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -805,26 +793,25 @@ Partial Class Result_1_finan
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label6 As Label
+    Friend WithEvents vparcela60 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label7 As Label
+    Friend WithEvents vparcela48 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label9 As Label
+    Friend WithEvents vparcela36 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label11 As Label
+    Friend WithEvents vparcela24 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label13 As Label
+    Friend WithEvents vparcela12 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Panel18 As Panel
     Friend WithEvents Panel16 As Panel
@@ -838,14 +825,14 @@ Partial Class Result_1_finan
     Friend WithEvents Label19 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label31 As Label
+    Friend WithEvents exibirParcela As Label
     Friend WithEvents Label29 As Label
-    Friend WithEvents Label28 As Label
+    Friend WithEvents totalSemSeguro As Label
     Friend WithEvents Label27 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label23 As Label
+    Friend WithEvents lblVTarifas As Label
+    Friend WithEvents lblVFinanciado As Label
+    Friend WithEvents vLiquidoLiberado As Label
+    Friend WithEvents lblEntrada As Label
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Label30 As Label
     Friend WithEvents Label32 As Label

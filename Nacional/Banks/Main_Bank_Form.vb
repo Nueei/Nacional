@@ -1,4 +1,6 @@
-﻿Public Class Main_Bank_Form
+﻿Imports System.Net
+
+Public Class Main_Bank_Form
     Dim secondaryColor As Color = My.Settings.secondaryColor
     Dim primaryColor As Color = My.Settings.primaryColor
     Dim AtualBank As String = My.Settings.atualBank
@@ -88,6 +90,7 @@
                     Result_1_finan.Show()
                 Case "resultado-consorcio"
                     LimparControle()
+                    InputLog.RunWorkerAsync()
                     Resulta_2_consorcio.TopLevel = False
                     Resulta_2_consorcio.Parent = center_panel
                     Resulta_2_consorcio.WindowState = FormWindowState.Maximized
@@ -95,5 +98,24 @@
                     Resulta_2_consorcio.Show()
             End Select
         End If
+    End Sub
+
+    Private Sub InputLog_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles InputLog.DoWork
+        Try
+            Dim IPHI As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName)
+            Dim IpAdd As IPAddress = IPHI.AddressList.GetValue(2)
+            Dim hora As String = (System.DateTime.Now.ToString)
+            Dim computName As String = (My.Computer.Name.ToString)
+            Dim Ip As String = (IpAdd.ToString)
+            Dim userName As String = (My.User.Name.ToString)
+            Dim con As New Config_Class
+            con.Operar($"INSERT INTO `logs` VALUES (NULL, '{hora}', '{computName}', '{Ip}', '{userName}');")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub InputLog_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles InputLog.RunWorkerCompleted
+        InputLog.Dispose()
     End Sub
 End Class
