@@ -86,8 +86,10 @@ Partial Class DadosP_BV
         'cpf
         '
         Me.cpf.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.cpf.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cpf.Location = New System.Drawing.Point(29, 42)
+        Me.cpf.MaxLength = 14
         Me.cpf.Name = "cpf"
         Me.cpf.Size = New System.Drawing.Size(252, 17)
         Me.cpf.TabIndex = 11
@@ -129,6 +131,7 @@ Partial Class DadosP_BV
         'nome
         '
         Me.nome.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.nome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.nome.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nome.Location = New System.Drawing.Point(29, 42)
         Me.nome.Name = "nome"
@@ -146,6 +149,7 @@ Partial Class DadosP_BV
         'marca
         '
         Me.marca.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.marca.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.marca.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.marca.Location = New System.Drawing.Point(29, 286)
         Me.marca.Name = "marca"
@@ -155,6 +159,7 @@ Partial Class DadosP_BV
         'ano
         '
         Me.ano.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ano.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.ano.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ano.Location = New System.Drawing.Point(29, 207)
         Me.ano.Name = "ano"
@@ -164,6 +169,7 @@ Partial Class DadosP_BV
         'entrada
         '
         Me.entrada.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.entrada.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.entrada.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.entrada.Location = New System.Drawing.Point(29, 123)
         Me.entrada.Name = "entrada"
@@ -173,6 +179,7 @@ Partial Class DadosP_BV
         'valorveiculo_txt
         '
         Me.valorveiculo_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valorveiculo_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.valorveiculo_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.valorveiculo_txt.Location = New System.Drawing.Point(29, 42)
         Me.valorveiculo_txt.Name = "valorveiculo_txt"

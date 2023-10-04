@@ -26,8 +26,8 @@ Partial Class Result_1_finan
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.liberado_bar = New System.Windows.Forms.Panel()
+        Me.entrada_bar = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.vparcela60 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -81,7 +81,7 @@ Partial Class Result_1_finan
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Panel1.SuspendLayout()
+        Me.liberado_bar.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -143,23 +143,23 @@ Partial Class Result_1_finan
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "O valor precisa estar entre : R$ 99,999,99 e R$ 99,999,99."
         '
-        'Panel1
+        'liberado_bar
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(26, 304)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(449, 12)
-        Me.Panel1.TabIndex = 3
+        Me.liberado_bar.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.liberado_bar.Controls.Add(Me.entrada_bar)
+        Me.liberado_bar.Location = New System.Drawing.Point(26, 304)
+        Me.liberado_bar.Name = "liberado_bar"
+        Me.liberado_bar.Size = New System.Drawing.Size(450, 12)
+        Me.liberado_bar.TabIndex = 3
         '
-        'Panel2
+        'entrada_bar
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(42, 12)
-        Me.Panel2.TabIndex = 3
+        Me.entrada_bar.BackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(179, Byte), Integer))
+        Me.entrada_bar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.entrada_bar.Location = New System.Drawing.Point(0, 0)
+        Me.entrada_bar.Name = "entrada_bar"
+        Me.entrada_bar.Size = New System.Drawing.Size(11, 12)
+        Me.entrada_bar.TabIndex = 3
         '
         'Panel3
         '
@@ -730,7 +730,7 @@ Partial Class Result_1_finan
         Me.Panel21.Controls.Add(Me.Panel5)
         Me.Panel21.Controls.Add(Me.Panel4)
         Me.Panel21.Controls.Add(Me.Panel3)
-        Me.Panel21.Controls.Add(Me.Panel1)
+        Me.Panel21.Controls.Add(Me.liberado_bar)
         Me.Panel21.Controls.Add(Me.Label4)
         Me.Panel21.Controls.Add(Me.Label3)
         Me.Panel21.Controls.Add(Me.Label2)
@@ -753,7 +753,7 @@ Partial Class Result_1_finan
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "result_1_finan"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel1.ResumeLayout(False)
+        Me.liberado_bar.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
@@ -790,8 +790,8 @@ Partial Class Result_1_finan
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents liberado_bar As Panel
+    Friend WithEvents entrada_bar As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents vparcela60 As Label
     Friend WithEvents Label5 As Label

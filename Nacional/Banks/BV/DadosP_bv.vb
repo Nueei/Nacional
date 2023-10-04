@@ -54,18 +54,53 @@
     Private Sub Cpf_Enter(sender As Object, e As EventArgs) Handles cpf.Enter
         cpf_panel.BackColor = secondaryColor
     End Sub
+    Private Sub CPF_TXT_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cpf.KeyPress
+        e.Handled = SomenteNumero(Asc(e.KeyChar))
+
+    End Sub
+    Private Sub CPF_TXT_KeyPress(sender As Object, e As KeyEventArgs) Handles cpf.KeyDown
+        If e.KeyCode = Keys.Back Then
+            sender.text = ""
+        End If
+    End Sub
+
+    Private Sub OnlyNumKeyPress(sender As Object, e As KeyPressEventArgs) Handles entrada.KeyPress, valorveiculo_txt.KeyPress
+        e.Handled = SomenteNumero(Asc(e.KeyChar))
+    End Sub
     Private Sub Cpf_Leave(sender As Object, e As EventArgs) Handles cpf.Leave
         cpf_panel.BackColor = Color.Black
     End Sub
     Private Sub Cpf_TextChanged(sender As Object, e As EventArgs) Handles cpf.TextChanged
-        If sender.text <> "" Then
-            If cpf.Text.Length >= 11 Then
+        Dim vCpf As New ValidarCpf
+        cpf.SelectionStart = sender.text.length
+        Select Case sender.text.length
+            Case 3
+                sender.text = sender.text + "."
+
+            Case = 7
+                sender.text = sender.text + "."
+            Case 11
+                sender.text = sender.text + "-"
+        End Select
+        Try
+            vCpf.cpf = sender.text
+        Catch ex As Exception
+            sender.text = ""
+        End Try
+        If sender.text.length = 14 Then
+            If vCpf.isCpfValido Then
+                cpf_panel.BackColor = secondaryColor
                 Panel5.Visible = True
             Else
+                cpf_panel.BackColor = Color.FromArgb(255, 190, 190)
+                sender.text = ""
+                sender.focus
                 Panel5.Visible = False
                 last_panel.Visible = False
             End If
         End If
+
+
     End Sub
     Private Sub Valorveiculo_txt_Enter(sender As Object, e As EventArgs) Handles valorveiculo_txt.Enter
         valorveiculo_panel.BackColor = secondaryColor
@@ -153,4 +188,11 @@
             Main_Bank_Form.count_timer.Start()
         End If
     End Sub
+    Public Function SomenteNumero(ByVal key As String) As Boolean
+        If (key >= 48 And key <= 57) Or key = 8 Then
+            SomenteNumero = False
+        Else
+            SomenteNumero = True
+        End If
+    End Function
 End Class

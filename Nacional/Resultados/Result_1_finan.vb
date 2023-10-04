@@ -21,6 +21,8 @@
     End Sub
 
     Private Sub Result_1_finan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        pctEntrada = 50
+        '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
         Label17.Text = My.Settings.modeloVeiculo.ToString.ToUpper
         Label4.Text = $"O valor precisa estar entre: {valorEntrada.ToString("C")} e {valorFinanciado.ToString("C")}."
         vparcela12.Text = (valorFinanciado / 12).ToString("C")
@@ -35,6 +37,9 @@
         exibirParcela.Text = $"48x de {(valorFinanciado / 48).ToString("C")}"
         totalSemSeguro.Text = (valorFinanciado + vTarifas + valorEntrada).ToString("C")
         Label18.Text = $"Veículo no valor de: {valorVeiculo.ToString("C")}"
+        '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
+        entrada_bar.Size = New Size((liberado_bar.Width * (pctEntrada / 100)), 12)
+
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles vparcela60.Click, Panel3.Click, Label5.Click
