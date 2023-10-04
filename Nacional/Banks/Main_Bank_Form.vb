@@ -27,6 +27,15 @@ Public Class Main_Bank_Form
             Case "BV"
                 logo_pic.Image = My.Resources.BV_LOGO
                 load_pic.Image = My.Resources.BV_LOAD
+            Case "ITAU"
+                logo_pic.Image = My.Resources.ITAU_LOGO
+                load_pic.Image = My.Resources.ITAU_LOAD
+                top_panel.BackColor = primaryColor
+                Label1.ForeColor = Color.White
+                Label2.ForeColor = Color.White
+                Label3.ForeColor = Color.White
+                Label4.ForeColor = Color.White
+                Label5.ForeColor = Color.White
         End Select
     End Sub
 
@@ -63,6 +72,12 @@ Public Class Main_Bank_Form
                     DadosP_BV.WindowState = FormWindowState.Maximized
                     DadosP_BV.Location = New Point(0, 0)
                     DadosP_BV.Show()
+                Case "ITAU"
+                    DadosP_Itau.TopLevel = False
+                    DadosP_Itau.Parent = center_panel
+                    DadosP_Itau.WindowState = FormWindowState.Maximized
+                    DadosP_Itau.Location = New Point(0, 0)
+                    DadosP_Itau.Show()
             End Select
         End If
     End Sub

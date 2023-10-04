@@ -117,16 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="initial_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="count_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>133, 17</value>
-  </metadata>
-  <metadata name="InputLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>251, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>72</value>
-  </metadata>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Ao continuar, autorizo os gestores de banco de dados do cadastro 
+positivo a disponibilizarem ao Itaú Unibanco S.A o meu histórico de crédito. 
+Estou cirente dos termos de autorização e poderei efetuar o cancelamento
+a qualquer momento.
+
+Autorizo também a consulta ao sistema de informações de crédito (SCR) 
+do Banco Central, estou ciente que meus dados serão registrados no SCR 
+e de acordo com a política de privacidade.</value>
+  </data>
 </root>

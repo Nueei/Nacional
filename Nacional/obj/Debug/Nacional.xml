@@ -47,6 +47,21 @@ Nacional
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Nacional.My.Resources.Resources.Itau_Ground1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.ITAU_LOAD">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.ITAU_LOGO">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Nacional.My.Resources.Resources.whatsapp_logo">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

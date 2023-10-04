@@ -87,6 +87,13 @@ Public Class Login_form
                 '/-/-/-/-/-/-/-\-\-\-\-\-\-\
                 ResultBV()
                 Return True
+            Case Keys.F2 And PodeAlterar = True
+                Aleatorizar_banco.Stop()
+                animacao_aguarde.Stop()
+                PodeAlterar = False
+                '/-/-/-/-/-/-/-\-\-\-\-\-\-\
+                ResultITAU()
+                Return True
             Case Else
                 Return False
         End Select
@@ -99,15 +106,24 @@ Public Class Login_form
         int = rnd.Next(0, 6)
         Select Case int
             Case 1
-                resultBV()
+                ResultBV()
+            Case 2
+                ResultITAU()
             Case Else
-                resultBV()
+                ResultBV()
         End Select
     End Sub
     Sub ResultBV()
         My.Settings.atualBank = "BV"
         My.Settings.secondaryColor = Color.FromArgb(75, 115, 218)
 
+        Main_Bank_Form.Show()
+        Me.Close()
+    End Sub
+    Sub ResultITAU()
+        My.Settings.atualBank = "ITAU"
+        My.Settings.primaryColor = Color.FromArgb(236, 116, 0)
+        My.Settings.secondaryColor = Color.White
         Main_Bank_Form.Show()
         Me.Close()
     End Sub

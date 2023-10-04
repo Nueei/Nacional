@@ -23,7 +23,7 @@ Partial Class Main_Bank_Form
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.top_panel = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -33,32 +33,31 @@ Partial Class Main_Bank_Form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.logo_pic = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.center_panel = New System.Windows.Forms.Panel()
-        Me.load_pic = New System.Windows.Forms.PictureBox()
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
         Me.InputLog = New System.ComponentModel.BackgroundWorker()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Panel1.SuspendLayout()
+        Me.load_pic = New System.Windows.Forms.PictureBox()
+        Me.logo_pic = New System.Windows.Forms.PictureBox()
+        Me.top_panel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.center_panel.SuspendLayout()
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'top_panel
         '
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TableLayoutPanel1)
-        Me.Panel1.Controls.Add(Me.logo_pic)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(915, 81)
-        Me.Panel1.TabIndex = 0
+        Me.top_panel.Controls.Add(Me.Label5)
+        Me.top_panel.Controls.Add(Me.Label4)
+        Me.top_panel.Controls.Add(Me.TableLayoutPanel1)
+        Me.top_panel.Controls.Add(Me.logo_pic)
+        Me.top_panel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.top_panel.Location = New System.Drawing.Point(0, 0)
+        Me.top_panel.Name = "top_panel"
+        Me.top_panel.Size = New System.Drawing.Size(915, 81)
+        Me.top_panel.TabIndex = 0
         '
         'Label5
         '
@@ -166,15 +165,6 @@ Partial Class Main_Bank_Form
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Políticas de uso"
         '
-        'logo_pic
-        '
-        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
-        Me.logo_pic.Name = "logo_pic"
-        Me.logo_pic.Size = New System.Drawing.Size(91, 75)
-        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.logo_pic.TabIndex = 1
-        Me.logo_pic.TabStop = False
-        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Silver
@@ -195,16 +185,6 @@ Partial Class Main_Bank_Form
         Me.center_panel.Size = New System.Drawing.Size(915, 483)
         Me.center_panel.TabIndex = 2
         '
-        'load_pic
-        '
-        Me.load_pic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.load_pic.Location = New System.Drawing.Point(426, 24)
-        Me.load_pic.Name = "load_pic"
-        Me.load_pic.Size = New System.Drawing.Size(85, 79)
-        Me.load_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.load_pic.TabIndex = 0
-        Me.load_pic.TabStop = False
-        '
         'initial_timer
         '
         Me.initial_timer.Interval = 1
@@ -216,6 +196,25 @@ Partial Class Main_Bank_Form
         'InputLog
         '
         '
+        'load_pic
+        '
+        Me.load_pic.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.load_pic.Location = New System.Drawing.Point(426, 24)
+        Me.load_pic.Name = "load_pic"
+        Me.load_pic.Size = New System.Drawing.Size(85, 79)
+        Me.load_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.load_pic.TabIndex = 0
+        Me.load_pic.TabStop = False
+        '
+        'logo_pic
+        '
+        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
+        Me.logo_pic.Name = "logo_pic"
+        Me.logo_pic.Size = New System.Drawing.Size(91, 75)
+        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.logo_pic.TabIndex = 1
+        Me.logo_pic.TabStop = False
+        '
         'Main_Bank_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -224,24 +223,24 @@ Partial Class Main_Bank_Form
         Me.ClientSize = New System.Drawing.Size(915, 568)
         Me.Controls.Add(Me.center_panel)
         Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.top_panel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Main_Bank_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main_BV"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.top_panel.ResumeLayout(False)
+        Me.top_panel.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.center_panel.ResumeLayout(False)
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents top_panel As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel3 As Panel
@@ -258,5 +257,4 @@ Partial Class Main_Bank_Form
     Friend WithEvents initial_timer As Timer
     Friend WithEvents count_timer As Timer
     Friend WithEvents InputLog As System.ComponentModel.BackgroundWorker
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

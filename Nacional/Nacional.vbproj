@@ -97,14 +97,26 @@
     <Compile Include="Banks\BV\DadosP_BV.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Banks\ITAU\DadosP_Itau.Designer.vb">
+      <DependentUpon>DadosP_Itau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Banks\ITAU\DadosP_Itau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banks\ITAU\DadosV_Itau.Designer.vb">
+      <DependentUpon>DadosV_Itau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Banks\ITAU\DadosV_Itau.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Banks\Main_Bank_Form.Designer.vb">
       <DependentUpon>Main_Bank_Form.vb</DependentUpon>
     </Compile>
     <Compile Include="Banks\Main_Bank_Form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Classes\Config_Class.vb" />
-    <Compile Include="Classes\ValidarCpf.vb" />
+    <Compile Include="Configuracoes\Classes\Config_Class.vb" />
+    <Compile Include="Configuracoes\Classes\ValidarCpf.vb" />
     <Compile Include="Configuracoes\Finan_config.Designer.vb">
       <DependentUpon>Finan_config.vb</DependentUpon>
     </Compile>
@@ -156,6 +168,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Banks\BV\DadosP_BV.resx">
       <DependentUpon>DadosP_BV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banks\ITAU\DadosP_Itau.resx">
+      <DependentUpon>DadosP_Itau.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banks\Main_Bank_Form.resx">
       <DependentUpon>Main_Bank_Form.vb</DependentUpon>
@@ -218,6 +233,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ITAU_LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITAU_LOAD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itau_Ground1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
