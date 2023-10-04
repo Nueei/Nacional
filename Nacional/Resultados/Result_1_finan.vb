@@ -21,7 +21,6 @@
     End Sub
 
     Private Sub Result_1_finan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pctEntrada = 50
         '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
         Label17.Text = My.Settings.modeloVeiculo.ToString.ToUpper
         Label4.Text = $"O valor precisa estar entre: {valorEntrada.ToString("C")} e {valorFinanciado.ToString("C")}."

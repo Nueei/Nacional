@@ -92,7 +92,7 @@
                 cpf_panel.BackColor = secondaryColor
                 Panel5.Visible = True
             Else
-                cpf_panel.BackColor = Color.FromArgb(255, 190, 190)
+                cpf_panel.BackColor = Color.FromArgb(255, 90, 90)
                 sender.text = ""
                 sender.focus
                 Panel5.Visible = False

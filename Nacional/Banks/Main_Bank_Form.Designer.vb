@@ -40,6 +40,7 @@ Partial Class Main_Bank_Form
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
         Me.InputLog = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,4 +258,5 @@ Partial Class Main_Bank_Form
     Friend WithEvents initial_timer As Timer
     Friend WithEvents count_timer As Timer
     Friend WithEvents InputLog As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

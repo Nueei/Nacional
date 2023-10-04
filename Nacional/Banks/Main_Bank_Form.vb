@@ -1,4 +1,5 @@
-﻿Imports System.Net
+﻿Imports System.CodeDom
+Imports System.Net
 
 Public Class Main_Bank_Form
     Dim secondaryColor As Color = My.Settings.secondaryColor
@@ -105,11 +106,11 @@ Public Class Main_Bank_Form
             Dim IPHI As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName)
             Dim IpAdd As IPAddress = IPHI.AddressList.GetValue(2)
             Dim hora As String = (System.DateTime.Now.ToString)
-            Dim computName As String = (My.Computer.Name.ToString)
+            Dim computName As String = (My.Computer.Name.ToString.ToUpper)
             Dim Ip As String = (IpAdd.ToString)
-            Dim userName As String = (My.User.Name.ToString)
+            Dim userName As String = (My.User.Name.ToString.ToUpper)
             Dim con As New Config_Class
-            con.Operar($"INSERT INTO `logs` VALUES (NULL, '{hora}', '{computName}', '{Ip}', '{userName}');")
+            con.Operar($"INSERT INTO `logs` VALUES (NULL, '{hora}', '{computName}', '{Ip}', '{userName}', '{My.Settings.atualBank.ToString.ToUpper}');")
         Catch ex As Exception
 
         End Try
