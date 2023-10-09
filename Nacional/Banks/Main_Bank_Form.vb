@@ -112,6 +112,14 @@ Public Class Main_Bank_Form
                     Resulta_2_consorcio.WindowState = FormWindowState.Maximized
                     Resulta_2_consorcio.Location = New Point(0, 0)
                     Resulta_2_consorcio.Show()
+                Case "dadosV-itau"
+                    LimparControle()
+                    InputLog.RunWorkerAsync()
+                    DadosV_Itau.TopLevel = False
+                    DadosV_Itau.Parent = center_panel
+                    DadosV_Itau.WindowState = FormWindowState.Maximized
+                    DadosV_Itau.Location = New Point(0, 0)
+                    DadosV_Itau.Show()
             End Select
         End If
     End Sub

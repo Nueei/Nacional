@@ -19,3 +19,4 @@ C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.pdb
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.DadosP_BV.resources
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.Result_1_finan.resources
 C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.DadosP_Itau.resources
+C:\Win\Projeto_atualizado\Nacional\Nacional\obj\Debug\Nacional.DadosV_Itau.resources

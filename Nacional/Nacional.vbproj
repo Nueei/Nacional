@@ -172,6 +172,9 @@
     <EmbeddedResource Include="Banks\ITAU\DadosP_Itau.resx">
       <DependentUpon>DadosP_Itau.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Banks\ITAU\DadosV_Itau.resx">
+      <DependentUpon>DadosV_Itau.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Banks\Main_Bank_Form.resx">
       <DependentUpon>Main_Bank_Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +244,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Itau_Ground1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itau_Ground2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itau_Ground3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
