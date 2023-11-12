@@ -185,6 +185,114 @@ Namespace My
                 Me("modeloVeiculo") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property creditoC1() As String
+            Get
+                Return CType(Me("creditoC1"),String)
+            End Get
+            Set
+                Me("creditoC1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property creditoC2() As String
+            Get
+                Return CType(Me("creditoC2"),String)
+            End Get
+            Set
+                Me("creditoC2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property creditoC3() As String
+            Get
+                Return CType(Me("creditoC3"),String)
+            End Get
+            Set
+                Me("creditoC3") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property entradaC1() As String
+            Get
+                Return CType(Me("entradaC1"),String)
+            End Get
+            Set
+                Me("entradaC1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property entradaC2() As String
+            Get
+                Return CType(Me("entradaC2"),String)
+            End Get
+            Set
+                Me("entradaC2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property entradaC3() As String
+            Get
+                Return CType(Me("entradaC3"),String)
+            End Get
+            Set
+                Me("entradaC3") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property parcelaC1() As String
+            Get
+                Return CType(Me("parcelaC1"),String)
+            End Get
+            Set
+                Me("parcelaC1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property parcelaC2() As String
+            Get
+                Return CType(Me("parcelaC2"),String)
+            End Get
+            Set
+                Me("parcelaC2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property parcelaC3() As String
+            Get
+                Return CType(Me("parcelaC3"),String)
+            End Get
+            Set
+                Me("parcelaC3") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
