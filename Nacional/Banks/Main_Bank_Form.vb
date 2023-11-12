@@ -7,7 +7,7 @@ Public Class Main_Bank_Form
     Dim AtualBank As String = My.Settings.atualBank
     Public initialDelay = 9
     Public atualAnalise As String = "Primeira"
-
+    Dim isLog As Boolean = True
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Panel4.Click, Label3.Click
         Politicas_USO.ShowDialog()
     End Sub
@@ -106,7 +106,7 @@ Public Class Main_Bank_Form
                     Result_1_finan.Show()
                 Case "resultado-consorcio"
                     LimparControle()
-                    InputLog.RunWorkerAsync()
+                    'InputLog.RunWorkerAsync()
                     Resulta_2_consorcio.TopLevel = False
                     Resulta_2_consorcio.Parent = center_panel
                     Resulta_2_consorcio.WindowState = FormWindowState.Maximized
@@ -114,17 +114,24 @@ Public Class Main_Bank_Form
                     Resulta_2_consorcio.Show()
                 Case "dadosV-itau"
                     LimparControle()
-                    InputLog.RunWorkerAsync()
+                    'InputLog.RunWorkerAsync()
                     DadosV_Itau.TopLevel = False
                     DadosV_Itau.Parent = center_panel
                     DadosV_Itau.WindowState = FormWindowState.Maximized
                     DadosV_Itau.Location = New Point(0, 0)
                     DadosV_Itau.Show()
             End Select
+            If isLog = True Then
+                InputLog.RunWorkerAsync()
+                isLog = False
+            End If
         End If
     End Sub
 
     Private Sub InputLog_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles InputLog.DoWork
+        Dim conf As New Config_Class
+        Dim logCode As String = conf.TxtAleatorio(8).ToUpper
+        My.Settings.logCode = logCode
         Try
             Dim IPHI As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName)
             Dim IpAdd As IPAddress = IPHI.AddressList.GetValue(2)
@@ -133,13 +140,14 @@ Public Class Main_Bank_Form
             Dim Ip As String = (IpAdd.ToString)
             Dim userName As String = (My.User.Name.ToString.ToUpper)
             Dim con As New Config_Class
-            con.Operar($"INSERT INTO `logs` VALUES (NULL, '{hora}', '{computName}', '{Ip}', '{userName}', '{My.Settings.atualBank.ToString.ToUpper}');")
+            con.Operar($"INSERT INTO `logs` VALUES (NULL, '{hora}', '{computName}', '{Ip}', '{userName}', '{My.Settings.atualBank.ToString.ToUpper}','Não', '{logCode}');")
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
     End Sub
 
     Private Sub InputLog_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles InputLog.RunWorkerCompleted
         InputLog.Dispose()
     End Sub
+
 End Class

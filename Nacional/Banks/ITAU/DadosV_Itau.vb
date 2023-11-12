@@ -29,7 +29,12 @@
         celular_panel.BackColor = Color.FromArgb(236, 116, 0)
     End Sub
     Private Sub celular_txt_Leave(sender As Object, e As EventArgs) Handles marca.Leave
-        modeloVeiculo = sender.text
+        Try
+            modeloVeiculo = marca.Text.ToString.ToUpper
+        Catch ex As Exception
+            modeloVeiculo = marca.Text
+        End Try
+
         celular_panel.BackColor = Color.Black
     End Sub
     Private Sub CPF_TXT_KeyPress(sender As Object, e As KeyPressEventArgs) Handles entrada.KeyPress, valorveiculo_txt.KeyPress
@@ -104,4 +109,5 @@
             Main_Bank_Form.count_timer.Start()
         End If
     End Sub
+
 End Class

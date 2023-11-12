@@ -22,22 +22,27 @@
 
     Private Sub Result_1_finan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
-        Label17.Text = My.Settings.modeloVeiculo.ToString.ToUpper
-        Label4.Text = $"O valor precisa estar entre: {valorEntrada.ToString("C")} e {valorFinanciado.ToString("C")}."
-        vparcela12.Text = (valorFinanciado / 12).ToString("C")
-        vparcela24.Text = (valorFinanciado / 24).ToString("C")
-        vparcela36.Text = (valorFinanciado / 36).ToString("C")
-        vparcela48.Text = (valorFinanciado / 48).ToString("C")
-        vparcela60.Text = (valorFinanciado / 60).ToString("C")
-        lblEntrada.Text = valorEntrada.ToString("C")
-        vLiquidoLiberado.Text = valorLiquido.ToString("C")
-        lblVFinanciado.Text = valorFinanciado.ToString("C")
-        lblVTarifas.Text = vTarifas.ToString("C")
-        exibirParcela.Text = $"48x de {(valorFinanciado / 48).ToString("C")}"
-        totalSemSeguro.Text = (valorFinanciado + vTarifas + valorEntrada).ToString("C")
-        Label18.Text = $"Veículo no valor de: {valorVeiculo.ToString("C")}"
-        '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
-        entrada_bar.Size = New Size((liberado_bar.Width * (pctEntrada / 100)), 12)
+        Try
+            Label17.Text = My.Settings.modeloVeiculo
+            Label4.Text = $"O valor precisa estar entre: {valorEntrada.ToString("C")} e {valorFinanciado.ToString("C")}."
+            vparcela12.Text = (valorFinanciado / 12).ToString("C")
+            vparcela24.Text = (valorFinanciado / 24).ToString("C")
+            vparcela36.Text = (valorFinanciado / 36).ToString("C")
+            vparcela48.Text = (valorFinanciado / 48).ToString("C")
+            vparcela60.Text = (valorFinanciado / 60).ToString("C")
+            lblEntrada.Text = valorEntrada.ToString("C")
+            vLiquidoLiberado.Text = valorLiquido.ToString("C")
+            lblVFinanciado.Text = valorFinanciado.ToString("C")
+            lblVTarifas.Text = vTarifas.ToString("C")
+            exibirParcela.Text = $"48x de {(valorFinanciado / 48).ToString("C")}"
+            totalSemSeguro.Text = (valorFinanciado + vTarifas + valorEntrada).ToString("C")
+            Label18.Text = $"Veículo no valor de: {valorVeiculo.ToString("C")}"
+            '*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--**--**-
+            entrada_bar.Size = New Size((liberado_bar.Width * (pctEntrada / 100)), 12)
+        Catch ex As Exception
+            MsgBox("Falha na conexão, reiniciando aplicação", MsgBoxStyle.Critical, "Atenção")
+            Application.Restart()
+        End Try
 
     End Sub
 

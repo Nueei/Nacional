@@ -83,7 +83,6 @@ Partial Class Politicas_USO
         Me.MaximumSize = New System.Drawing.Size(550, 530)
         Me.MinimumSize = New System.Drawing.Size(550, 530)
         Me.Name = "Politicas_USO"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Politicas de Uso"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)

@@ -33,18 +33,18 @@ Partial Class Main_Bank_Form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.logo_pic = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.center_panel = New System.Windows.Forms.Panel()
+        Me.load_pic = New System.Windows.Forms.PictureBox()
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
         Me.InputLog = New System.ComponentModel.BackgroundWorker()
-        Me.load_pic = New System.Windows.Forms.PictureBox()
-        Me.logo_pic = New System.Windows.Forms.PictureBox()
         Me.top_panel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.center_panel.SuspendLayout()
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'top_panel
@@ -165,6 +165,15 @@ Partial Class Main_Bank_Form
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Políticas de uso"
         '
+        'logo_pic
+        '
+        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
+        Me.logo_pic.Name = "logo_pic"
+        Me.logo_pic.Size = New System.Drawing.Size(91, 75)
+        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.logo_pic.TabIndex = 1
+        Me.logo_pic.TabStop = False
+        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Silver
@@ -185,17 +194,6 @@ Partial Class Main_Bank_Form
         Me.center_panel.Size = New System.Drawing.Size(915, 483)
         Me.center_panel.TabIndex = 2
         '
-        'initial_timer
-        '
-        Me.initial_timer.Interval = 1
-        '
-        'count_timer
-        '
-        Me.count_timer.Interval = 1
-        '
-        'InputLog
-        '
-        '
         'load_pic
         '
         Me.load_pic.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -206,14 +204,16 @@ Partial Class Main_Bank_Form
         Me.load_pic.TabIndex = 0
         Me.load_pic.TabStop = False
         '
-        'logo_pic
+        'initial_timer
         '
-        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
-        Me.logo_pic.Name = "logo_pic"
-        Me.logo_pic.Size = New System.Drawing.Size(91, 75)
-        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.logo_pic.TabIndex = 1
-        Me.logo_pic.TabStop = False
+        Me.initial_timer.Interval = 1
+        '
+        'count_timer
+        '
+        Me.count_timer.Interval = 1
+        '
+        'InputLog
+        '
         '
         'Main_Bank_Form
         '
@@ -233,9 +233,9 @@ Partial Class Main_Bank_Form
         Me.top_panel.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.center_panel.ResumeLayout(False)
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -24,8 +24,6 @@ D:\dev\Nacional\Nacional\bin\Debug\Nacional.exe.config
 D:\dev\Nacional\Nacional\bin\Debug\Nacional.exe
 D:\dev\Nacional\Nacional\bin\Debug\Nacional.pdb
 D:\dev\Nacional\Nacional\bin\Debug\Nacional.xml
-D:\dev\Nacional\Nacional\bin\Debug\Google.Protobuf.dll
-D:\dev\Nacional\Nacional\bin\Debug\MySql.Data.xml
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.vbproj.AssemblyReference.cache
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.DadosP_BV.resources
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.DadosP_Itau.resources
@@ -41,3 +39,4 @@ D:\dev\Nacional\Nacional\obj\Debug\Nacional.vbproj.CopyComplete
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.exe
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.xml
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.pdb
+D:\dev\Nacional\Nacional\obj\Debug\Nacional.Resulta_2_consorcio.resources

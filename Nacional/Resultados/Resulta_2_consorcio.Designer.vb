@@ -23,6 +23,7 @@ Partial Class Resulta_2_consorcio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.updateLog = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'Label1
@@ -33,6 +34,9 @@ Partial Class Resulta_2_consorcio
         Me.Label1.Size = New System.Drawing.Size(71, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Finalizar aqui!"
+        '
+        'updateLog
+        '
         '
         'Resulta_2_consorcio
         '
@@ -52,4 +56,5 @@ Partial Class Resulta_2_consorcio
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents updateLog As System.ComponentModel.BackgroundWorker
 End Class

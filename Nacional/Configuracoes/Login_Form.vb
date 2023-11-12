@@ -29,7 +29,6 @@ Public Class Login_form
             Aguarde_lbl.Text = "Aguarde"
         End If
     End Sub
-    'n7eeie67
     Private Sub Extract_pass_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles Extract_pass.DoWork
 
         '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

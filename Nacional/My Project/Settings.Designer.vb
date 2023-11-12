@@ -293,6 +293,18 @@ Namespace My
                 Me("parcelaC3") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property logCode() As String
+            Get
+                Return CType(Me("logCode"),String)
+            End Get
+            Set
+                Me("logCode") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
