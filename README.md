@@ -1,5 +1,3 @@
-echo ^message^ >> README.md
-git add README.MD
-
-<br>Implementar outros bancos</br>
-<br>Começar a programar o resultado do consórcio </br>
+<br>Adicionar SANTANDER</br>
+<br>Adicionar BB</br>
+<br>Finalizar Resultado do Consórcio </br>
