@@ -36,6 +36,9 @@ Public Class Main_Bank_Form
                 Label3.ForeColor = Color.White
                 Label4.ForeColor = Color.White
                 Label5.ForeColor = Color.White
+            Case "PAN"
+                logo_pic.Image = My.Resources.Banco_PAN_Logo
+                load_pic.Image = My.Resources.pan_load_gif1
         End Select
     End Sub
 
@@ -78,6 +81,12 @@ Public Class Main_Bank_Form
                     DadosP_Itau.WindowState = FormWindowState.Maximized
                     DadosP_Itau.Location = New Point(0, 0)
                     DadosP_Itau.Show()
+                Case "PAN"
+                    Dados_PPAN.TopLevel = False
+                    Dados_PPAN.Parent = center_panel
+                    Dados_PPAN.WindowState = FormWindowState.Maximized
+                    Dados_PPAN.Location = New Point(0, 0)
+                    Dados_PPAN.Show()
             End Select
         End If
     End Sub

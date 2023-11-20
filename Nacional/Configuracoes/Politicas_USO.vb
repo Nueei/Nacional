@@ -13,6 +13,4 @@
         CheckBox1.Checked = False
         Me.DialogResult = DialogResult.OK
     End Sub
-
-
 End Class

@@ -46,4 +46,23 @@ Public Class Config_Class
         Return senha.ToString
     End Function 'GERAR SENHA
 
+
+
+
+    Private Const EM_DEFINIR_TEXTO_AJUDA As Integer = &H1501
+    <DllImport("user32.dll", EntryPoint:="SendMessageW")>
+    Private Shared Function SendMessageW(ByVal hWnd As IntPtr,
+                                                                ByVal Msg As UInteger,
+                                                                ByVal wParam As UInteger,
+                                                                <MarshalAs(UnmanagedType.LPTStr)> ByVal lParam As String) As Integer
+    End Function
+    ''' <summary>Exibe um texto em cinza no textbox para indicar uma mensagem de ajuda .</summary>
+    ''' <param name="TxBx"> O controle textbox que vai receber o texto.</param>
+    ''' <param name="TextoAjuda"> O texto a ser exibido no  textbox.</param>
+    ''' <param name="LimparNoFoco">True para limpar o texto da dica de ajuda quando o textbox receber o foco, caso contrário False.</param>
+    Public Shared Sub SetTextoAJuda(ByVal TxBx As TextBox, ByVal TextoAjuda As String, Optional LimparNoFoco As Boolean = True)
+        Dim exibirFoco As UInteger = 1
+        If LimparNoFoco Then exibirFoco = 0
+        SendMessageW(TxBx.Handle, EM_DEFINIR_TEXTO_AJUDA, exibirFoco, TextoAjuda)
+    End Sub
 End Class

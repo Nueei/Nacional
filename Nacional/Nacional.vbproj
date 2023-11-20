@@ -115,6 +115,12 @@
     <Compile Include="Banks\Main_Bank_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Banks\PAN\Dados_PPAN.Designer.vb">
+      <DependentUpon>Dados_PPAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Banks\PAN\Dados_PPAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Configuracoes\Classes\Config_Class.vb" />
     <Compile Include="Configuracoes\Classes\ValidarCpf.vb" />
     <Compile Include="Configuracoes\Finan_config.Designer.vb">
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Banks\Main_Bank_Form.resx">
       <DependentUpon>Main_Bank_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banks\PAN\Dados_PPAN.resx">
+      <DependentUpon>Dados_PPAN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracoes\Login_Form.resx">
       <DependentUpon>Login_Form.vb</DependentUpon>
@@ -253,6 +262,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Itau_Ground3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan_ground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan_ground2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan_ground3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan_load_gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banco_PAN_Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -40,3 +40,4 @@ D:\dev\Nacional\Nacional\obj\Debug\Nacional.exe
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.xml
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.pdb
 D:\dev\Nacional\Nacional\obj\Debug\Nacional.Resulta_2_consorcio.resources
+D:\dev\Nacional\Nacional\obj\Debug\Nacional.Dados_PPAN.resources

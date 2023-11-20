@@ -158,6 +158,13 @@ Public Class Login_form
                 '/-/-/-/-/-/-/-\-\-\-\-\-\-\
                 ResultITAU()
                 Return True
+            Case Keys.F3 And PodeAlterar = True
+                Aleatorizar_banco.Stop()
+                animacao_aguarde.Stop()
+                PodeAlterar = False
+                '/-/-/-/-/-/-/-\-\-\-\-\-\-\
+                ResultPAN()
+                Return True
             Case Else
                 Return False
         End Select
@@ -188,6 +195,13 @@ Public Class Login_form
         My.Settings.atualBank = "ITAU"
         My.Settings.primaryColor = Color.FromArgb(236, 116, 0)
         My.Settings.secondaryColor = Color.White
+        Main_Bank_Form.Show()
+        Me.Close()
+    End Sub
+    Sub ResultPAN()
+        My.Settings.atualBank = "PAN"
+        My.Settings.primaryColor = Color.FromArgb(65, 65, 65)
+        My.Settings.secondaryColor = Color.FromArgb(0, 197, 255)
         Main_Bank_Form.Show()
         Me.Close()
     End Sub
