@@ -102,6 +102,26 @@ Nacional
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Nacional.My.Resources.Resources.pfisica_santander">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.pjuridica_santander">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.santander_ground1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.santander_load_gif">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Nacional.My.Resources.Resources.whatsapp_logo">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

@@ -121,6 +121,12 @@
     <Compile Include="Banks\PAN\Dados_PPAN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Banks\SANTANDER\Dados_PSantander.Designer.vb">
+      <DependentUpon>Dados_PSantander.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Banks\SANTANDER\Dados_PSantander.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Configuracoes\Classes\Config_Class.vb" />
     <Compile Include="Configuracoes\Classes\ValidarCpf.vb" />
     <Compile Include="Configuracoes\Finan_config.Designer.vb">
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Banks\PAN\Dados_PPAN.resx">
       <DependentUpon>Dados_PPAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banks\SANTANDER\Dados_PSantander.resx">
+      <DependentUpon>Dados_PSantander.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracoes\Login_Form.resx">
       <DependentUpon>Login_Form.vb</DependentUpon>
@@ -277,6 +286,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Banco_PAN_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pfisica_santander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santander_load_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santander_ground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pjuridica_santander.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,13 +1,23 @@
-﻿Public Class Dados_PPAN
+﻿Imports System.Drawing.Imaging
+
+Public Class Dados_PSantander
     Dim vVeiculo As Integer
     Dim vEntrada As Integer
     Private Sub Me_load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Parent = PictureBox1
-        Label2.Parent = PictureBox1
-        Label1.BackColor = Color.Transparent
-        Label2.BackColor = Color.Transparent
-        Dim atualPanelYPos As Integer = Panel1.Location.Y
-        Panel1.Location = New Point((Me.Size.Width / 2) - Panel1.Width / 2, atualPanelYPos)
+        Dim atualPanelWSize As Integer = center_panel.Size.Width
+        Dim atualPanelHSize As Integer = center_panel.Size.Height
+        center_panel.Location = New Point(((Me.Size.Width / 2) - (atualPanelWSize / 2)), (Me.Size.Height / 2) - (atualPanelHSize / 2))
+        CenterObject(Label1)
+        CenterObject(Label2)
+        CenterObject(Label3)
+
+        '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Dim p1YPos As Integer = Panel1.Location.Y
+        Dim p2YPos As Integer = Panel2.Location.Y
+
+        Panel1.Location = New Point(((center_panel.Size.Width / 2) - Panel1.Size.Width / 2), p1YPos)
+        Panel2.Location = New Point(((center_panel.Size.Width / 2) - Panel2.Size.Width / 2), p2YPos)
+
         '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Config_Class.SetTextoAJuda(nome_txt, "NOME COMPLETO*", False)
         Config_Class.SetTextoAJuda(nascimento_txt, "Data de nascimento*")
@@ -19,6 +29,10 @@
         Config_Class.SetTextoAJuda(ano_txt, "Ano*")
         '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     End Sub
+    Sub CenterObject(e As Object)
+        Dim eYPos As Integer = e.location.y
+        e.location = New Point(((center_panel.Size.Width / 2) - (e.size.width / 2)), eYPos)
+    End Sub
     Public Function SomenteNumero(ByVal key As String) As Boolean
         If (key >= 48 And key <= 57) Or key = 8 Then
             SomenteNumero = False
@@ -29,7 +43,7 @@
     Private Sub CPF_TXT_KeyPress(sender As Object, e As KeyPressEventArgs) Handles telefone_txt.KeyPress, cpf_txt.KeyPress, entrada_txt.KeyPress, ano_txt.KeyPress, valor_veiculo_txt.KeyPress, telefone_txt.KeyPress
         e.Handled = SomenteNumero(Asc(e.KeyChar))
     End Sub
-    Private Sub SimulateFinan(sender As Object, e As EventArgs) Handles Panel3.Click, Label3.Click
+    Private Sub SimulateFinan(sender As Object, e As EventArgs) Handles GO_BTN.Click, GO_LBL.Click
         If isAllTextCompleted() Then
             With My.Settings
                 .valorVeiculo = vVeiculo
@@ -137,17 +151,18 @@
     Private Sub RestaureTextColor(sender As Object, e As EventArgs) Handles valor_veiculo_txt.TextChanged, telefone_txt.TextChanged, nome_txt.TextChanged, nascimento_txt.TextChanged, modelo_txt.TextChanged, entrada_txt.TextChanged, cpf_txt.TextChanged, ano_txt.TextChanged
         sender.backcolor = Color.White
         If isAllTextCompletedToContinue() And CheckBox1.Checked = True Then
-            Panel3.BackColor = Color.FromArgb(34, 58, 210)
+            GO_BTN.BackColor = Color.FromArgb(204, 0, 0)
         End If
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If isAllTextCompletedToContinue() Then
-            Panel3.BackColor = Color.FromArgb(34, 58, 210)
+            GO_BTN.BackColor = Color.FromArgb(204, 0, 0)
         End If
     End Sub
 
     Private Sub Entrada_txt_Leave(sender As Object, e As EventArgs) Handles entrada_txt.Leave
+
         Try
             vEntrada = sender.text
             sender.text = vEntrada.ToString("C")
@@ -175,9 +190,10 @@
         nascimento_txt.SelectionStart = sender.text.length
         If nascimento_txt.Text.Length = 2 Then
             sender.text = sender.text & "/"
+            nascimento_txt.SelectionStart = sender.text.length
         ElseIf nascimento_txt.Text.Length = 5 Then
             sender.text = sender.text & "/"
-
+            nascimento_txt.SelectionStart = sender.text.length
         End If
     End Sub
 
@@ -190,5 +206,10 @@
         If vEntrada <> 0 Then
             sender.text = vEntrada
         End If
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click, Label4.Click
+        Panel2.Visible = True
+        Label4.ForeColor = Color.FromArgb(204, 0, 0)
     End Sub
 End Class

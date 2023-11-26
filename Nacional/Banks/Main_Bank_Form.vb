@@ -8,7 +8,7 @@ Public Class Main_Bank_Form
     Public initialDelay = 9
     Public atualAnalise As String = "Primeira"
     Dim isLog As Boolean = True
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Panel4.Click, Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Panel4.Click, Label3.Click, Label5.Click
         Politicas_USO.ShowDialog()
     End Sub
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
@@ -18,6 +18,9 @@ Public Class Main_Bank_Form
     End Sub
 
     Private Sub Main_Bank_Form_Load(sender As Object, e As EventArgs) Handles Me.Load
+        '-=-=-=-=-=
+
+        '-=-=-=-=-=
         initial_timer.Start()
         '*/-**-*-*-*-*-
         Panel2.BackColor = My.Settings.primaryColor
@@ -39,6 +42,22 @@ Public Class Main_Bank_Form
             Case "PAN"
                 logo_pic.Image = My.Resources.Banco_PAN_Logo
                 load_pic.Image = My.Resources.pan_load_gif1
+            Case "SANTANDER"
+                top_panel.BackColor = primaryColor
+                top_panel.ForeColor = secondaryColor
+                logo_pic.Size = New Size(300, 141)
+                logo_pic.SizeMode = PictureBoxSizeMode.StretchImage
+                logo_pic.Image = My.Resources.santander_ground1
+                TableLayoutPanel1.Visible = False
+                load_pic.Image = My.Resources.santander_load_gif
+                Label5.Cursor = Cursors.Hand
+                Label5.Text = "Política de Uso"
+                Label5.Font = New Font("Microsoft Sans Serif", 15)
+                Label5.Location = New Point(0, 0)
+                load_pic.Size = New Size(48, 52)
+
+                '-=-=-=-=-=-=-=-=
+                logo_pic.Location = New Point((top_panel.Size.Width / 2) - (logo_pic.Size.Width / 2), (top_panel.Size.Height / 2) - (logo_pic.Size.Height / 2))
         End Select
     End Sub
 
@@ -87,6 +106,12 @@ Public Class Main_Bank_Form
                     Dados_PPAN.WindowState = FormWindowState.Maximized
                     Dados_PPAN.Location = New Point(0, 0)
                     Dados_PPAN.Show()
+                Case "SANTANDER"
+                    Dados_PSantander.TopLevel = False
+                    Dados_PSantander.Parent = center_panel
+                    Dados_PSantander.WindowState = FormWindowState.Maximized
+                    Dados_PSantander.Location = New Point(0, 0)
+                    Dados_PSantander.Show()
             End Select
         End If
     End Sub
@@ -158,5 +183,4 @@ Public Class Main_Bank_Form
     Private Sub InputLog_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles InputLog.RunWorkerCompleted
         InputLog.Dispose()
     End Sub
-
 End Class
