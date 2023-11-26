@@ -177,8 +177,10 @@ Public Class Dados_PBB
         nascimento_txt.SelectionStart = sender.text.length
         If nascimento_txt.Text.Length = 2 Then
             sender.text = sender.text & "/"
+            nascimento_txt.SelectionStart = sender.text.length
         ElseIf nascimento_txt.Text.Length = 5 Then
             sender.text = sender.text & "/"
+            nascimento_txt.SelectionStart = sender.text.length
 
         End If
     End Sub

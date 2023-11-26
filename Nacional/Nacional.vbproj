@@ -205,6 +205,9 @@
     <EmbeddedResource Include="Banks\SANTANDER\Dados_PSantander.resx">
       <DependentUpon>Dados_PSantander.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\Finan_config.resx">
+      <DependentUpon>Finan_config.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuracoes\Login_Form.resx">
       <DependentUpon>Login_Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +319,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BB_Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultGround1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -29,7 +29,7 @@
     <Setting Name="valorVeiculo" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="anoVeiculo" Type="System.Int32" Scope="User">
+    <Setting Name="anoVeiculo" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="modeloVeiculo" Type="System.String" Scope="User">

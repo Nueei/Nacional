@@ -218,6 +218,7 @@ Partial Class DadosP_Itau
         'celular_txt
         '
         Me.celular_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.celular_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.celular_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.celular_txt.Location = New System.Drawing.Point(36, 222)
         Me.celular_txt.Name = "celular_txt"
@@ -227,6 +228,7 @@ Partial Class DadosP_Itau
         'email_txt
         '
         Me.email_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.email_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.email_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email_txt.Location = New System.Drawing.Point(36, 163)
         Me.email_txt.Name = "email_txt"
@@ -236,6 +238,7 @@ Partial Class DadosP_Itau
         'nome_txt
         '
         Me.nome_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.nome_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.nome_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nome_txt.Location = New System.Drawing.Point(36, 105)
         Me.nome_txt.Name = "nome_txt"

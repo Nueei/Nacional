@@ -20,7 +20,6 @@ Public Class Main_Bank_Form
 
     Private Sub Main_Bank_Form_Load(sender As Object, e As EventArgs) Handles Me.Load
         '-=-=-=-=-=
-        AtualBank = "BB"
         '-=-=-=-=-=
         initial_timer.Start()
         '*/-**-*-*-*-*-
@@ -147,8 +146,8 @@ Public Class Main_Bank_Form
                     LimparControle()
                     Result_1_finan.TopLevel = False
                     Result_1_finan.Parent = center_panel
-                    Result_1_finan.WindowState = FormWindowState.Maximized
-                    Result_1_finan.Location = New Point(0, 0)
+                    Result_1_finan.WindowState = FormWindowState.Normal
+                    Result_1_finan.Location = New Point((center_panel.Size.Width / 2) - Result_1_finan.Size.Width / 2, (center_panel.Size.Height / 2) - Result_1_finan.Size.Height / 2) 'New Point(0, 0)
                     Result_1_finan.Show()
                 Case "resultado-consorcio"
                     LimparControle()

@@ -17,7 +17,6 @@ Public Class Login_form
     '||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     Private Sub Me_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         My.Settings.Reset()
-
         animacao_aguarde.Start()
         '/*/*/*/*/*/*/*/*/*\*\*\*\*\*\*\*\*\*\
         Break_BRUTEFORCE.Start()
@@ -32,58 +31,7 @@ Public Class Login_form
     Private Sub Extract_pass_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles Extract_pass.DoWork
 
         '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-        For codeGen = 1 To 3
-            Try
-                ds = Config.Listar($"SELECT credito, entrada, parcela FROM `CODE{codeGen}` WHERE 1")
-                ReDim vParcelas(ds.Tables(0).Rows().Count)
-                ReDim vCredito(ds.Tables(0).Rows().Count)
-                ReDim vEntrada(ds.Tables(0).Rows().Count)
-                For i = 0 To ds.Tables(0).Rows().Count - 1
-                    vEntrada(i) = ds.Tables(0).Rows(i)("entrada")
-                    vParcelas(i) = ds.Tables(0).Rows(i)("parcela")
-                    vCredito(i) = ds.Tables(0).Rows(i)("credito")
-                Next
 
-                For i = 0 To ds.Tables(0).Rows.Count - 1
-                    If i = ds.Tables(0).Rows.Count - 1 Then
-                        vCreditoS = vCreditoS & ds.Tables(0).Rows(i)("credito").ToString
-                        vParcelasS = vParcelasS & ds.Tables(0).Rows(i)("parcela").ToString
-                        vEntradaS = vEntradaS & ds.Tables(0).Rows(i)("entrada").ToString
-                        Exit For
-                    End If
-                    vCreditoS = vCreditoS & ds.Tables(0).Rows(i)("credito").ToString & ","
-                    vParcelasS = vParcelasS & ds.Tables(0).Rows(i)("parcela").ToString & ","
-                    vEntradaS = vEntradaS & ds.Tables(0).Rows(i)("entrada").ToString & ","
-                Next
-
-                Select Case codeGen
-                    Case = 1
-                        With My.Settings
-                            .creditoC1 = vCreditoS
-                            .entradaC1 = vEntradaS
-                            .parcelaC1 = vParcelasS
-                        End With
-                    Case = 2
-                        With My.Settings
-                            .creditoC2 = vCreditoS
-                            .entradaC2 = vEntradaS
-                            .parcelaC2 = vParcelasS
-                        End With
-                    Case = 3
-                        With My.Settings
-                            .creditoC3 = vCreditoS
-                            .entradaC3 = vEntradaS
-                            .parcelaC3 = vParcelasS
-                        End With
-                End Select
-                vCreditoS = Nothing
-                vParcelasS = Nothing
-                vEntradaS = Nothing
-            Catch ex As Exception
-                MsgBox("Erro interno de sistema, finalizando aplicação!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção!")
-                End
-            End Try
-        Next
         Try
             ds = Nothing
             ds = Config.Listar("SELECT * FROM `sys_config` where id_pass = '1'")
@@ -102,6 +50,7 @@ Public Class Login_form
             End If
             If pass = ds.Tables(0).Rows(0)("pass").ToString Then
                 MsgBox("Logado com sucesso!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Sucesso.")
+
                 Break_BRUTEFORCE.Stop()
                 Aleatorizar_banco.Start()
                 PodeAlterar = True

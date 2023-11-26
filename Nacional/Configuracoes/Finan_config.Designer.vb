@@ -39,6 +39,7 @@ Partial Class Finan_config
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -152,6 +153,7 @@ Partial Class Finan_config
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.RadioButton5)
         Me.Panel2.Controls.Add(Me.RadioButton4)
         Me.Panel2.Controls.Add(Me.RadioButton3)
         Me.Panel2.Controls.Add(Me.RadioButton2)
@@ -160,7 +162,7 @@ Partial Class Finan_config
         Me.Panel2.Enabled = False
         Me.Panel2.Location = New System.Drawing.Point(12, 171)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(262, 126)
+        Me.Panel2.Size = New System.Drawing.Size(262, 148)
         Me.Panel2.TabIndex = 0
         '
         'RadioButton4
@@ -168,10 +170,10 @@ Partial Class Finan_config
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Location = New System.Drawing.Point(6, 96)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(57, 17)
+        Me.RadioButton4.Size = New System.Drawing.Size(102, 17)
         Me.RadioButton4.TabIndex = 1
         Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "COD 4"
+        Me.RadioButton4.Text = "COD ESPECIAL"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton3
@@ -210,27 +212,38 @@ Partial Class Finan_config
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 301)
+        Me.Button1.Location = New System.Drawing.Point(12, 325)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(262, 32)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Salvar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(6, 119)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(95, 17)
+        Me.RadioButton5.TabIndex = 1
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "COD RECUSA"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
         'Finan_config
         '
         Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(286, 336)
+        Me.ClientSize = New System.Drawing.Size(286, 369)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.MaximumSize = New System.Drawing.Size(302, 375)
-        Me.MinimumSize = New System.Drawing.Size(302, 375)
+        Me.MaximumSize = New System.Drawing.Size(302, 408)
+        Me.MinimumSize = New System.Drawing.Size(302, 408)
         Me.Name = "Finan_config"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Configurar Instruções"
@@ -260,4 +273,5 @@ Partial Class Finan_config
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button1 As Button
+    Friend WithEvents RadioButton5 As RadioButton
 End Class

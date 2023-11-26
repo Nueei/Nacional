@@ -45,7 +45,20 @@ Public Class Config_Class
         Next
         Return senha.ToString
     End Function 'GERAR SENHA
-
+    Public Function NumeroAleatorio(ByVal inttamanho As Integer) As String
+        Static rand As New Random
+        Dim senha As New System.Text.StringBuilder(inttamanho)
+        ' Dim senha As New Text.stringbuilder(inttamanho)
+        For I As Integer = 1 To inttamanho
+            Dim Index As Integer
+            Do
+                Index = rand.Next(48, 57)
+            Loop Until (Index >= 48 AndAlso Index <= 57)
+            ' Loop Until (Index >= 48 AndAlso Index <= 57) OrElse (Index >= 48 AndAlso Index <= 90) OrElse (Index >= 97 AndAlso Index <= 122)
+            senha.Append(Convert.ToChar(Index))
+        Next
+        Return senha.ToString
+    End Function 'GERAR SENHA
 
 
 

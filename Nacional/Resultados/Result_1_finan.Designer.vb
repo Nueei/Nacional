@@ -72,10 +72,6 @@ Partial Class Result_1_finan
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
         Me.Panel19 = New System.Windows.Forms.Panel()
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.Label35 = New System.Windows.Forms.Label()
@@ -95,8 +91,6 @@ Partial Class Result_1_finan
         Me.Panel15.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -630,51 +624,6 @@ Partial Class Result_1_finan
         Me.Label18.TabIndex = 1
         Me.Label18.Text = "Veículo no valor de: R$ 99.999,99"
         '
-        'Panel17
-        '
-        Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel17.Controls.Add(Me.PictureBox2)
-        Me.Panel17.Controls.Add(Me.Label32)
-        Me.Panel17.Controls.Add(Me.Label30)
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel17.Location = New System.Drawing.Point(0, 570)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(915, 67)
-        Me.Panel17.TabIndex = 8
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = Global.Nacional.My.Resources.Resources.whatsapp_logo
-        Me.PictureBox2.Location = New System.Drawing.Point(792, 13)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(111, 42)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.ForeColor = System.Drawing.Color.White
-        Me.Label32.Location = New System.Drawing.Point(12, 47)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(393, 13)
-        Me.Label32.TabIndex = 0
-        Me.Label32.Text = "De segunda à sexta-feira, das 08 às 18h. Sábado de 09h às 15h, exceto feriados."
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.White
-        Me.Label30.Location = New System.Drawing.Point(12, 9)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(214, 13)
-        Me.Label30.TabIndex = 0
-        Me.Label30.Text = "CENTRAL DE SUPORTE A VENDAS"
-        '
         'Panel19
         '
         Me.Panel19.BackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(179, Byte), Integer))
@@ -747,7 +696,6 @@ Partial Class Result_1_finan
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(915, 637)
         Me.Controls.Add(Me.Panel21)
-        Me.Controls.Add(Me.Panel17)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Result_1_finan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -777,9 +725,6 @@ Partial Class Result_1_finan
         Me.Panel13.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel17.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel21.ResumeLayout(False)
         Me.Panel21.PerformLayout()
         Me.ResumeLayout(False)
@@ -833,11 +778,7 @@ Partial Class Result_1_finan
     Friend WithEvents lblVFinanciado As Label
     Friend WithEvents vLiquidoLiberado As Label
     Friend WithEvents lblEntrada As Label
-    Friend WithEvents Panel17 As Panel
-    Friend WithEvents Label30 As Label
-    Friend WithEvents Label32 As Label
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label34 As Label
     Friend WithEvents Label33 As Label
     Friend WithEvents Panel19 As Panel

@@ -165,9 +165,9 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property anoVeiculo() As Integer
+        Public Property anoVeiculo() As String
             Get
-                Return CType(Me("anoVeiculo"),Integer)
+                Return CType(Me("anoVeiculo"),String)
             End Get
             Set
                 Me("anoVeiculo") = value

@@ -40,11 +40,17 @@ Partial Class Main_Bank_Form
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
         Me.InputLog = New System.ComponentModel.BackgroundWorker()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.top_panel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.center_panel.SuspendLayout()
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel17.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'top_panel
@@ -191,7 +197,7 @@ Partial Class Main_Bank_Form
         Me.center_panel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.center_panel.Location = New System.Drawing.Point(0, 85)
         Me.center_panel.Name = "center_panel"
-        Me.center_panel.Size = New System.Drawing.Size(915, 483)
+        Me.center_panel.Size = New System.Drawing.Size(915, 424)
         Me.center_panel.TabIndex = 2
         '
         'load_pic
@@ -206,21 +212,69 @@ Partial Class Main_Bank_Form
         '
         'initial_timer
         '
+        Me.initial_timer.Interval = 1
         '
         'count_timer
         '
+        Me.count_timer.Interval = 1
         '
         'InputLog
         '
+        '
+        'Panel17
+        '
+        Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Panel17.Controls.Add(Me.PictureBox2)
+        Me.Panel17.Controls.Add(Me.Label32)
+        Me.Panel17.Controls.Add(Me.Label30)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel17.Location = New System.Drawing.Point(0, 509)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(915, 67)
+        Me.Panel17.TabIndex = 9
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.Image = Global.Nacional.My.Resources.Resources.whatsapp_logo
+        Me.PictureBox2.Location = New System.Drawing.Point(792, 13)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(111, 42)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.White
+        Me.Label32.Location = New System.Drawing.Point(12, 47)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(393, 13)
+        Me.Label32.TabIndex = 0
+        Me.Label32.Text = "De segunda à sexta-feira, das 08 às 18h. Sábado de 09h às 15h, exceto feriados."
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.White
+        Me.Label30.Location = New System.Drawing.Point(12, 9)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(214, 13)
+        Me.Label30.TabIndex = 0
+        Me.Label30.Text = "CENTRAL DE SUPORTE A VENDAS"
         '
         'Main_Bank_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(915, 568)
+        Me.ClientSize = New System.Drawing.Size(915, 576)
         Me.Controls.Add(Me.center_panel)
         Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel17)
         Me.Controls.Add(Me.top_panel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Main_Bank_Form"
@@ -234,6 +288,9 @@ Partial Class Main_Bank_Form
         CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.center_panel.ResumeLayout(False)
         CType(Me.load_pic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel17.ResumeLayout(False)
+        Me.Panel17.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -255,4 +312,8 @@ Partial Class Main_Bank_Form
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label30 As Label
 End Class

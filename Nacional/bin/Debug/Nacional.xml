@@ -42,6 +42,11 @@ Nacional
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Nacional.My.Resources.Resources.BB_Logo2">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Nacional.My.Resources.Resources.BV_LOAD">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
@@ -118,6 +123,11 @@ Nacional
 </summary>
 </member>
 <member name="P:Nacional.My.Resources.Resources.pjuridica_santander">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.resultGround1">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
