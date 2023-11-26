@@ -1,5 +1,6 @@
 ﻿Imports System.CodeDom
 Imports System.Net
+Imports MySql.Data.Types
 
 Public Class Main_Bank_Form
     Dim secondaryColor As Color = My.Settings.secondaryColor
@@ -19,7 +20,7 @@ Public Class Main_Bank_Form
 
     Private Sub Main_Bank_Form_Load(sender As Object, e As EventArgs) Handles Me.Load
         '-=-=-=-=-=
-
+        AtualBank = "BB"
         '-=-=-=-=-=
         initial_timer.Start()
         '*/-**-*-*-*-*-
@@ -58,6 +59,11 @@ Public Class Main_Bank_Form
 
                 '-=-=-=-=-=-=-=-=
                 logo_pic.Location = New Point((top_panel.Size.Width / 2) - (logo_pic.Size.Width / 2), (top_panel.Size.Height / 2) - (logo_pic.Size.Height / 2))
+            Case "BB"
+                top_panel.BackColor = primaryColor
+                top_panel.ForeColor = secondaryColor
+                load_pic.Image = My.Resources.pan_load_gif1
+                logo_pic.Image = My.Resources.BB_Logo2
         End Select
     End Sub
 
@@ -112,6 +118,12 @@ Public Class Main_Bank_Form
                     Dados_PSantander.WindowState = FormWindowState.Maximized
                     Dados_PSantander.Location = New Point(0, 0)
                     Dados_PSantander.Show()
+                Case "BB"
+                    Dados_PBB.TopLevel = False
+                    Dados_PBB.Parent = center_panel
+                    Dados_PBB.WindowState = FormWindowState.Maximized
+                    Dados_PBB.Location = New Point(0, 0)
+                    Dados_PBB.Show()
             End Select
         End If
     End Sub
@@ -183,4 +195,5 @@ Public Class Main_Bank_Form
     Private Sub InputLog_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles InputLog.RunWorkerCompleted
         InputLog.Dispose()
     End Sub
+
 End Class

@@ -32,6 +32,16 @@ Nacional
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Nacional.My.Resources.Resources.bb_ground1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional.My.Resources.Resources.BB_Logo1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Nacional.My.Resources.Resources.BV_LOAD">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

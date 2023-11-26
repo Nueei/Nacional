@@ -172,6 +172,13 @@ Public Class Login_form
                 '/-/-/-/-/-/-/-\-\-\-\-\-\-\
                 ResultSantander()
                 Return True
+            Case Keys.F5 And PodeAlterar = True
+                Aleatorizar_banco.Stop()
+                animacao_aguarde.Stop()
+                PodeAlterar = False
+                '/-/-/-/-/-/-/-\-\-\-\-\-\-\
+                ResultBB()
+                Return True
             Case Else
                 Return False
         End Select
@@ -190,7 +197,9 @@ Public Class Login_form
             Case 3
                 ResultPAN()
             Case 4
-                resultsantander()
+                ResultSantander()
+            Case 5
+                ResultBB()
             Case Else
                 ResultBV()
         End Select
@@ -198,6 +207,13 @@ Public Class Login_form
     Sub ResultBV()
         My.Settings.atualBank = "BV"
         My.Settings.secondaryColor = Color.FromArgb(75, 115, 218)
+        Main_Bank_Form.Show()
+        Me.Close()
+    End Sub
+    Sub ResultBB()
+        My.Settings.atualBank = "BB"
+        My.Settings.primaryColor = Color.FromArgb(255, 239, 56)
+        My.Settings.secondaryColor = Color.FromArgb(0, 61, 164)
         Main_Bank_Form.Show()
         Me.Close()
     End Sub
