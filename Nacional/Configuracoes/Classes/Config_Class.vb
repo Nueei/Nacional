@@ -73,7 +73,7 @@ Public Class Config_Class
     ''' <param name="TxBx"> O controle textbox que vai receber o texto.</param>
     ''' <param name="TextoAjuda"> O texto a ser exibido no  textbox.</param>
     ''' <param name="LimparNoFoco">True para limpar o texto da dica de ajuda quando o textbox receber o foco, caso contrário False.</param>
-    Public Shared Sub SetTextoAJuda(ByVal TxBx As TextBox, ByVal TextoAjuda As String, Optional LimparNoFoco As Boolean = True)
+    Public Shared Sub SetTextoAJuda(ByVal TxBx As TextBox, ByVal TextoAjuda As String, Optional LimparNoFoco As Boolean = False)
         Dim exibirFoco As UInteger = 1
         If LimparNoFoco Then exibirFoco = 0
         SendMessageW(TxBx.Handle, EM_DEFINIR_TEXTO_AJUDA, exibirFoco, TextoAjuda)

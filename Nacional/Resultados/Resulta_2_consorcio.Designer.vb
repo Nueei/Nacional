@@ -24,7 +24,6 @@ Partial Class Resulta_2_consorcio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.updateLog = New System.ComponentModel.BackgroundWorker()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -39,25 +38,15 @@ Partial Class Resulta_2_consorcio
         Me.bottom_panel = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.bottom_panel.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'updateLog
         '
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Nacional.My.Resources.Resources.resultGround1
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(915, 637)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Panel1
         '
@@ -70,7 +59,7 @@ Partial Class Resulta_2_consorcio
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.entrada_txt)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(22, 153)
+        Me.Panel1.Location = New System.Drawing.Point(134, 123)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(303, 374)
         Me.Panel1.TabIndex = 1
@@ -195,6 +184,17 @@ Partial Class Resulta_2_consorcio
         '
         Me.Timer1.Interval = 1000
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.Nacional.My.Resources.Resources.resultGround1
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(915, 637)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Resulta_2_consorcio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -209,13 +209,13 @@ Partial Class Resulta_2_consorcio
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Resulta_2_consorcio"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.bottom_panel.ResumeLayout(False)
         Me.bottom_panel.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

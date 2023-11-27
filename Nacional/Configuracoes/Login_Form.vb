@@ -40,7 +40,7 @@ Public Class Login_form
 
         Try
             ds = Nothing
-            ds = Config.Listar("SELECT * FROM `sys_config` where id = '1'")
+            ds = Config.Listar("SELECT * FROM `sys_config` where id_config = '1'")
             If isNecessarioAtualizar(ds.Tables(0).Rows(0)("sys_version")) Then
 
                 downloadVersion.RunWorkerAsync()

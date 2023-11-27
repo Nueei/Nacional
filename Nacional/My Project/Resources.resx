@@ -124,20 +124,23 @@
   <data name="Banco_PAN_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Banco_PAN_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pan_ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pan_ground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="whatsapp-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\whatsapp-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pan_ground3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pan_ground3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ITAU_LOAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ITAU_LOAD.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Itau_Ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Itau_Ground1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pjuridica_santander" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pjuridica_santander.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BV_LOAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BV_LOAD.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bb_ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb_ground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carros_ground_alternative" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carros_ground_alternative.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,17 +157,20 @@
   <data name="BV_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BV_LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="resultGround1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultGround1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pan_load_gif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pan_load_gif1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Itau_Ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Itau_Ground1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pan_ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pan_ground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pjuridica_santander" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pjuridica_santander.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pan_ground3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pan_ground3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bv_promo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bv_promo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BB_Logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB_Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BB_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BB_Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,16 +187,13 @@
   <data name="Itau_Ground2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Itau_Ground2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bv_promo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bv_promo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pan_ground2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pan_ground2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BB_Logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BB_Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bb_ground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bb_ground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resultGround1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resultGround1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Banco_Central_do_Brasil_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banco_Central_do_Brasil_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

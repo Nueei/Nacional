@@ -34,24 +34,24 @@ Partial Class Main_Bank_Form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.logo_pic = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.center_panel = New System.Windows.Forms.Panel()
-        Me.load_pic = New System.Windows.Forms.PictureBox()
         Me.initial_timer = New System.Windows.Forms.Timer(Me.components)
         Me.count_timer = New System.Windows.Forms.Timer(Me.components)
         Me.InputLog = New System.ComponentModel.BackgroundWorker()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.load_pic = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.logo_pic = New System.Windows.Forms.PictureBox()
         Me.top_panel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.center_panel.SuspendLayout()
-        CType(Me.load_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel17.SuspendLayout()
+        CType(Me.load_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'top_panel
@@ -172,15 +172,6 @@ Partial Class Main_Bank_Form
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Políticas de uso"
         '
-        'logo_pic
-        '
-        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
-        Me.logo_pic.Name = "logo_pic"
-        Me.logo_pic.Size = New System.Drawing.Size(85, 72)
-        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.logo_pic.TabIndex = 1
-        Me.logo_pic.TabStop = False
-        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Silver
@@ -200,16 +191,6 @@ Partial Class Main_Bank_Form
         Me.center_panel.Name = "center_panel"
         Me.center_panel.Size = New System.Drawing.Size(915, 424)
         Me.center_panel.TabIndex = 2
-        '
-        'load_pic
-        '
-        Me.load_pic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.load_pic.Location = New System.Drawing.Point(426, 24)
-        Me.load_pic.Name = "load_pic"
-        Me.load_pic.Size = New System.Drawing.Size(85, 79)
-        Me.load_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.load_pic.TabIndex = 0
-        Me.load_pic.TabStop = False
         '
         'initial_timer
         '
@@ -234,17 +215,6 @@ Partial Class Main_Bank_Form
         Me.Panel17.Size = New System.Drawing.Size(915, 67)
         Me.Panel17.TabIndex = 9
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = Global.Nacional.My.Resources.Resources.whatsapp_logo
-        Me.PictureBox2.Location = New System.Drawing.Point(792, 13)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(111, 42)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
         'Label32
         '
         Me.Label32.AutoSize = True
@@ -267,6 +237,36 @@ Partial Class Main_Bank_Form
         Me.Label30.TabIndex = 0
         Me.Label30.Text = "CENTRAL DE SUPORTE A VENDAS"
         '
+        'load_pic
+        '
+        Me.load_pic.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.load_pic.Location = New System.Drawing.Point(426, 24)
+        Me.load_pic.Name = "load_pic"
+        Me.load_pic.Size = New System.Drawing.Size(85, 79)
+        Me.load_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.load_pic.TabIndex = 0
+        Me.load_pic.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.Image = Global.Nacional.My.Resources.Resources.whatsapp_logo
+        Me.PictureBox2.Location = New System.Drawing.Point(792, 13)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(111, 42)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'logo_pic
+        '
+        Me.logo_pic.Location = New System.Drawing.Point(3, 3)
+        Me.logo_pic.Name = "logo_pic"
+        Me.logo_pic.Size = New System.Drawing.Size(85, 72)
+        Me.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.logo_pic.TabIndex = 1
+        Me.logo_pic.TabStop = False
+        '
         'Main_Bank_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -287,12 +287,12 @@ Partial Class Main_Bank_Form
         Me.top_panel.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.center_panel.ResumeLayout(False)
-        CType(Me.load_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel17.ResumeLayout(False)
         Me.Panel17.PerformLayout()
+        CType(Me.load_pic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.logo_pic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

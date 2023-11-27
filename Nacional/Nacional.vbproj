@@ -329,6 +329,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="nacional.ico" />
+    <None Include="Resources\Banco_Central_do_Brasil_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

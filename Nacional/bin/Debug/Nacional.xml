@@ -22,6 +22,11 @@ Nacional
   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
 </summary>
 </member>
+<member name="P:Nacional.My.Resources.Resources.Banco_Central_do_Brasil_logo">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Nacional.My.Resources.Resources.Banco_PAN_Logo">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

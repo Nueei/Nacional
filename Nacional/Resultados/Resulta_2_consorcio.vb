@@ -19,6 +19,9 @@ Public Class Resulta_2_consorcio
     Private Sub Resulta_2_consorcio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
         '-=-=-=-=-=-=-=-=-=-=-=-
+        My.Settings.primaryColor = Color.White
+        My.Settings.secondaryColor = Color.Black
+        Main_Bank_Form.logo_pic.Image = My.Resources.Banco_Central_do_Brasil_logo
 
         '-=-=-=-=-=-=-=-=-=-=-=-
 

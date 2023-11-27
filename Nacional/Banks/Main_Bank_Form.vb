@@ -163,6 +163,14 @@ Public Class Main_Bank_Form
                 Case "resultado-consorcio"
                     LimparControle()
                     'InputLog.RunWorkerAsync()
+                    top_panel.BackColor = Color.White
+                    top_panel.ForeColor = Color.Black
+                    Label4.ForeColor = Color.Black
+                    Label5.ForeColor = Color.Black
+                    Label5.Visible = False
+                    logo_pic.Size = New Size(150, 90)
+                    logo_pic.Location = New Point(0, 0)
+                    TableLayoutPanel1.ForeColor = Color.Black
                     Resulta_2_consorcio.TopLevel = False
                     Resulta_2_consorcio.Parent = center_panel
                     Resulta_2_consorcio.WindowState = FormWindowState.Maximized
