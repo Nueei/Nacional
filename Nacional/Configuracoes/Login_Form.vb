@@ -83,8 +83,12 @@ Public Class Login_form
                 If pass = "" Then
                     pass = InputBox("Digite a senha de acesso ao sistema:", "Atenção", "", -1, -1)
                 End If
+                Try
+                    pass = pass.ToUpper
+                Catch ex As Exception
 
-                If pass = ds.Tables(0).Rows(0)("pass").ToString Then
+                End Try
+                If pass.ToUpper = ds.Tables(0).Rows(0)("pass").ToString.ToUpper Then
                     MsgBox("Logado com sucesso!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Sucesso.")
 
                     Break_BRUTEFORCE.Stop()

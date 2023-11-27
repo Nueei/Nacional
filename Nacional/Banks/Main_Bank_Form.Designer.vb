@@ -213,11 +213,11 @@ Partial Class Main_Bank_Form
         '
         'initial_timer
         '
-        Me.initial_timer.Interval = 1
+        Me.initial_timer.Interval = 1000
         '
         'count_timer
         '
-        Me.count_timer.Interval = 1
+        Me.count_timer.Interval = 1000
         '
         'InputLog
         '

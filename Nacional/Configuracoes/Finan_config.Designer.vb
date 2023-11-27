@@ -34,12 +34,12 @@ Partial Class Finan_config
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -165,6 +165,18 @@ Partial Class Finan_config
         Me.Panel2.Size = New System.Drawing.Size(262, 148)
         Me.Panel2.TabIndex = 0
         '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Enabled = False
+        Me.RadioButton5.Location = New System.Drawing.Point(6, 119)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(95, 17)
+        Me.RadioButton5.TabIndex = 1
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "COD RECUSA"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
@@ -218,17 +230,6 @@ Partial Class Finan_config
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Salvar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(6, 119)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(95, 17)
-        Me.RadioButton5.TabIndex = 1
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "COD RECUSA"
-        Me.RadioButton5.UseVisualStyleBackColor = True
         '
         'Finan_config
         '
