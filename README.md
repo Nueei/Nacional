@@ -1,21 +1,24 @@
-<hr> </hr>
-<br> Implementar auto atualização </br>
-<br> </br>
-<hr> </hr>
+
 <br> Bloqueador de IP </br>
-<br> </br>
+
 <hr> </hr>
 NacionalUpdate.exe
 
-GERAL
-	Caminho para extração: C:/Nacional
-CONFIGURAÇÕES
-	Executar depois da extração: C:/Nacional/Nacional.exe
-MÉTODOS
-	Modo Silencioso: Ocultar tudo
-Avançado
-	Adicionar Atalho Área de Trabalho: Nacional Veiculos
-	Nome do arquivo de origem: C:/Nacional/Nacional.exe
-Atualizar
-	Metodos de Atualização: Extrair e Atualizar Arquivos
-	Metodos de substituição: Substituir todos os arquivos
+<br> GERAL </br>
+	<br> Caminho para extração: C:/Nacional </br>
+ <hr> </hr>
+ 
+<br> CONFIGURAÇÕES </br> 
+	 <br> Executar depois da extração: C:/Nacional/Nacional.exe </br> 
+   <hr> </hr>
+ <br> MÉTODOS </br> 
+	 <br> Modo Silencioso: Ocultar tudo </br> 
+   <hr> </hr>
+ <br> Avançado </br>
+	 <br> Adicionar Atalho Área de Trabalho: Nacional Veiculos </br>
+	 <br> Nome do arquivo de origem: C:/Nacional/Nacional.exe </br>
+   <hr> </hr>
+ <br> Atualizar </br>
+	 <br> Metodos de Atualização: Extrair e Atualizar Arquivos </br>
+	 <br> Metodos de substituição: Substituir todos os arquivos  </br>
+   <hr> </hr>
