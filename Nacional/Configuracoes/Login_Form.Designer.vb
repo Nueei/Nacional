@@ -23,6 +23,7 @@ Partial Class Login_form
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login_form))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.animacao_aguarde = New System.Windows.Forms.Timer(Me.components)
@@ -30,6 +31,7 @@ Partial Class Login_form
         Me.Extract_pass = New System.ComponentModel.BackgroundWorker()
         Me.Break_BRUTEFORCE = New System.Windows.Forms.Timer(Me.components)
         Me.Aleatorizar_banco = New System.Windows.Forms.Timer(Me.components)
+        Me.downloadVersion = New System.ComponentModel.BackgroundWorker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,6 +66,7 @@ Partial Class Login_form
         Me.Aguarde_lbl.Size = New System.Drawing.Size(47, 13)
         Me.Aguarde_lbl.TabIndex = 2
         Me.Aguarde_lbl.Text = "Aguarde"
+        Me.Aguarde_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Extract_pass
         '
@@ -76,6 +79,9 @@ Partial Class Login_form
         '
         Me.Aleatorizar_banco.Interval = 1000
         '
+        'downloadVersion
+        '
+        '
         'Login_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -86,6 +92,7 @@ Partial Class Login_form
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
@@ -102,4 +109,5 @@ Partial Class Login_form
     Friend WithEvents Extract_pass As System.ComponentModel.BackgroundWorker
     Friend WithEvents Break_BRUTEFORCE As Timer
     Friend WithEvents Aleatorizar_banco As Timer
+    Friend WithEvents downloadVersion As System.ComponentModel.BackgroundWorker
 End Class

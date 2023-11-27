@@ -1,6 +1,7 @@
 ﻿Imports System.CodeDom
 Imports System.Net
 Imports MySql.Data.Types
+Imports System.Drawing
 
 Public Class Main_Bank_Form
     Dim secondaryColor As Color = My.Settings.secondaryColor
@@ -26,10 +27,13 @@ Public Class Main_Bank_Form
         Panel2.BackColor = My.Settings.primaryColor
         Panel3.BackColor = My.Settings.primaryColor
         Panel4.BackColor = My.Settings.primaryColor
+
         Select Case AtualBank
             Case "BV"
                 logo_pic.Image = My.Resources.BV_LOGO
                 load_pic.Image = My.Resources.BV_LOAD
+                Dim defaultIcon As New Icon(Application.StartupPath & "/icons/bv.ico")
+                Me.Icon = defaultIcon
             Case "ITAU"
                 logo_pic.Image = My.Resources.ITAU_LOGO
                 load_pic.Image = My.Resources.ITAU_LOAD
@@ -39,9 +43,13 @@ Public Class Main_Bank_Form
                 Label3.ForeColor = Color.White
                 Label4.ForeColor = Color.White
                 Label5.ForeColor = Color.White
+                Dim defaultIcon As New Icon(Application.StartupPath & "/icons/itau.ico")
+                Me.Icon = defaultIcon
             Case "PAN"
                 logo_pic.Image = My.Resources.Banco_PAN_Logo
                 load_pic.Image = My.Resources.pan_load_gif1
+                Dim defaultIcon As New Icon(Application.StartupPath & "/icons/pan.ico")
+                Me.Icon = defaultIcon
             Case "SANTANDER"
                 top_panel.BackColor = primaryColor
                 top_panel.ForeColor = secondaryColor
@@ -55,7 +63,8 @@ Public Class Main_Bank_Form
                 Label5.Font = New Font("Microsoft Sans Serif", 15)
                 Label5.Location = New Point(0, 0)
                 load_pic.Size = New Size(48, 52)
-
+                Dim defaultIcon As New Icon(Application.StartupPath & "/icons/santander.ico")
+                Me.Icon = defaultIcon
                 '-=-=-=-=-=-=-=-=
                 logo_pic.Location = New Point((top_panel.Size.Width / 2) - (logo_pic.Size.Width / 2), (top_panel.Size.Height / 2) - (logo_pic.Size.Height / 2))
             Case "BB"
@@ -63,6 +72,8 @@ Public Class Main_Bank_Form
                 top_panel.ForeColor = secondaryColor
                 load_pic.Image = My.Resources.pan_load_gif1
                 logo_pic.Image = My.Resources.BB_Logo2
+                Dim defaultIcon As New Icon(Application.StartupPath & "/icons/bb.ico")
+                Me.Icon = defaultIcon
         End Select
     End Sub
 

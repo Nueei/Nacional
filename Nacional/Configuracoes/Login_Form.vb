@@ -1,4 +1,7 @@
 ﻿Imports System.ComponentModel
+Imports System.Text
+Imports System.Net.WebClient
+Imports System.Net
 
 Public Class Login_form
     Dim Config As New Config_Class
@@ -14,13 +17,16 @@ Public Class Login_form
     Dim vCreditoS As String
     Dim vParcelasS As String
     Dim vEntradaS As String
+    Dim isAtualizavel As Boolean
     '||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     Private Sub Me_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.TopMost = True
         My.Settings.Reset()
         animacao_aguarde.Start()
         '/*/*/*/*/*/*/*/*/*\*\*\*\*\*\*\*\*\*\
         Break_BRUTEFORCE.Start()
         Extract_pass.RunWorkerAsync()
+        Me.TopMost = False
     End Sub
     Private Sub Animacao_aguarde_Tick(sender As Object, e As EventArgs) Handles animacao_aguarde.Tick
         Aguarde_lbl.Text = Aguarde_lbl.Text & "."
@@ -34,36 +40,66 @@ Public Class Login_form
 
         Try
             ds = Nothing
-            ds = Config.Listar("SELECT * FROM `sys_config` where id_pass = '1'")
+            ds = Config.Listar("SELECT * FROM `sys_config` where id = '1'")
+            If isNecessarioAtualizar(ds.Tables(0).Rows(0)("sys_version")) Then
+
+                downloadVersion.RunWorkerAsync()
+                isAtualizavel = True
+                Exit Sub
+
+            End If
         Catch ex As Exception
-            MsgBox("Erro critico ao tentar acesso ao sistema." + vbNewLine + "Contate o supervisor.", MsgBoxStyle.Critical, "Atenção")
+            '    MsgBox("Erro critico ao tentar acesso ao sistema." + vbNewLine + "Contate o supervisor.", MsgBoxStyle.Critical, "Atenção")
+            MsgBox(ex.Message)
         End Try
     End Sub
     '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-    ' End Sub
 
+    Function isNecessarioAtualizar(versaoMaisRecente As String) As Boolean
+        Dim versaoInstalada As String = My.Application.Info.Version.ToString()
+        If versaoInstalada <> versaoMaisRecente Then
+            ' Aguarde_lbl.Text = ("Nova versão do sistema detectada," + vbNewLine + "Aguarde enquanto finalizamos o download!")
+
+            Return True 'true quando as versões são diferentes
+        End If
+        Return False
+    End Function
+
+
+    '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    Private Sub downloadVersion_DoWork(sender As Object, e As DoWorkEventArgs) Handles downloadVersion.DoWork
+        Dim urlNovaVersao As String = ds.Tables(0).Rows(0)("download_link").ToString
+        Dim localDeDownload As String = Application.StartupPath.ToString & "\NacionalUpdate.exe"
+
+        Dim wbClient As New WebClient
+        wbClient.DownloadFile(urlNovaVersao, localDeDownload)
+        Process.Start(localDeDownload)
+        End
+    End Sub
     Private Sub Extract_pass_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles Extract_pass.RunWorkerCompleted
-        If ds.Tables(0).Rows.Count > 0 Then
-            Dim pass As String = InputBox("Digite a senha de acesso ao sistema:", "Atenção", "", -1, -1)
-            If pass = "" Then
-                pass = InputBox("Digite a senha de acesso ao sistema:", "Atenção", "", -1, -1)
-            End If
-            If pass = ds.Tables(0).Rows(0)("pass").ToString Then
-                MsgBox("Logado com sucesso!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Sucesso.")
+        If isAtualizavel = False Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                Dim pass As String = InputBox("Digite a senha de acesso ao sistema:", "Atenção", "", -1, -1)
+                If pass = "" Then
+                    pass = InputBox("Digite a senha de acesso ao sistema:", "Atenção", "", -1, -1)
+                End If
 
-                Break_BRUTEFORCE.Stop()
-                Aleatorizar_banco.Start()
-                PodeAlterar = True
+                If pass = ds.Tables(0).Rows(0)("pass").ToString Then
+                    MsgBox("Logado com sucesso!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Sucesso.")
+
+                    Break_BRUTEFORCE.Stop()
+                    Aleatorizar_banco.Start()
+                    PodeAlterar = True
+                Else
+                    MsgBox("Senha incorreta, encerrando aplicação.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Atenção")
+                    End
+                End If
             Else
-                MsgBox("Senha incorreta, encerrando aplicação.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Atenção")
+                Break_BRUTEFORCE.Stop()
+                MsgBox("O sistema não retornou nenhuma consulta", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
                 End
             End If
-        Else
-            Break_BRUTEFORCE.Stop()
-            MsgBox("O sistema não retornou nenhuma consulta", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Atenção")
-            End
         End If
-
     End Sub
 
     Private Sub Break_BRUTEFORCE_Tick(sender As Object, e As EventArgs) Handles Break_BRUTEFORCE.Tick
@@ -186,5 +222,10 @@ Public Class Login_form
         My.Settings.secondaryColor = Color.FromArgb(255, 255, 255)
         Main_Bank_Form.Show()
         Me.Close()
+    End Sub
+
+    Private Sub downloadVersion_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles downloadVersion.RunWorkerCompleted
+        MsgBox("Download concluido")
+        End
     End Sub
 End Class
