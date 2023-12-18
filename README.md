@@ -16,7 +16,7 @@ NacionalUpdate.exe
    <hr> </hr>
  <br> Avançado </br>
 	 <br> Adicionar Atalho Área de Trabalho: Nacional Veiculos </br>
-	 <br> Nome do arquivo de origem: C:/Nacional/Nacional.exe </br>
+	 <br> D, C:/Nacional/Nacional.exe, , , "Nacional Veiculos", C:/Nacional/icons/nacional.ico </br>
    <hr> </hr>
  <br> Atualizar </br>
 	 <br> Metodos de Atualização: Extrair e Atualizar Arquivos </br>
