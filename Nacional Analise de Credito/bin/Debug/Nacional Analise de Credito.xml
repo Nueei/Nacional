@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Nacional Analise de Credito
+</name>
+</assembly>
+<members>
+<member name="T:Nacional_Analise_de_Credito.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.Alternative_BG1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.Analise_BG1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.Banco_Central_logo">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.basic_load_preto">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.RED_LOAD_GIF">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.Resultado_BG1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.teste">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Nacional_Analise_de_Credito.My.Resources.Resources.whatsapp_logo">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Nacional_Analise_de_Credito.Config_Class.SetTextoAJuda(System.Windows.Forms.TextBox,System.String,System.Boolean)">
+ <summary>Exibe um texto em cinza no textbox para indicar uma mensagem de ajuda .</summary>
+ <param name="TxBx"> O controle textbox que vai receber o texto.</param>
+ <param name="TextoAjuda"> O texto a ser exibido no  textbox.</param>
+ <param name="LimparNoFoco">True para limpar o texto da dica de ajuda quando o textbox receber o foco, caso contrário False.</param>
+</member>
+</members>
+</doc>

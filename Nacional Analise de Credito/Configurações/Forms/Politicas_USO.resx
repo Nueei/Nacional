@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Este termo de uso estabelece as condições e os termos pelos quais você ("usuário") poderá acessar e utilizar esta plataforma de instrução de análise bancária ("plataforma"). Ao clicar em "Continuar" ou utilizar a plataforma, você concorda em cumprir e estar vinculado a estes termos de uso. Se você não concorda com estes termos, não utilize a plataforma.
+
+1. Objetivo:
+Esta plataforma tem como intuito facilitar o aprendizado e entendimento de uma das várias formas de análises bancárias presentes no mercado. No entanto, esta ferramenta de estudo não instrui todas as formas vigentes, uma vez que isso é uma função das instituições de crédito.
+
+2. Resultados e Análises:
+Nenhum resultado desta plataforma deve ser levado em consideração, tampouco ser apresentado para outra pessoa como forma de análise real. Os resultados fornecidos são meramente educacionais e não garantem a precisão ou adequação para uso prático.
+
+3. Uso da Plataforma:
+O único intuito deste aplicativo é facilitar o treinamento e a instrução de funcionários, desde que estejam cientes de que se trata apenas de uma ferramenta com essa finalidade. O usuário assume toda a responsabilidade por qualquer dano que a utilização da plataforma possa causar, incluindo danos pessoais, materiais (como danos a computadores e notebooks), danos morais (caso utilizado de forma indevida) e danos financeiros causados a terceiros.
+
+4. Isenção de Responsabilidade:
+O desenvolvedor desta ferramenta de estudo não se responsabiliza por qualquer imprecisão, incompletude ou inadequação das informações fornecidas pela plataforma. Embora tenham sido feitos esforços para garantir a precisão e confiabilidade das informações, o desenvolvedor não oferece garantias de qualquer tipo, expressas ou implícitas, sobre a integridade, precisão, confiabilidade, adequação ou disponibilidade em relação à plataforma ou às informações contidas nela.
+
+O uso desta ferramenta é por conta e risco do usuário. O desenvolvedor não será responsável por quaisquer perdas, danos ou lesões decorrentes do uso ou incapacidade de uso desta ferramenta, incluindo, mas não se limitando a, danos diretos, indiretos, incidentais, consequenciais, especiais, exemplares ou outros tipos de danos, independentemente de serem baseados em contrato, ato ilícito (incluindo negligência) ou qualquer outra teoria legal, mesmo que o desenvolvedor tenha sido informado da possibilidade de tais danos.
+
+5. Indenização:
+O usuário concorda em indenizar e isentar o desenvolvedor, seus afiliados, funcionários, agentes e parceiros de qualquer reclamação, demanda, ação judicial, perda, responsabilidade, custo ou despesa, incluindo honorários advocatícios razoáveis, decorrentes ou relacionados ao uso da plataforma, à violação dos termos de uso ou à violação de quaisquer direitos de terceiros.
+
+6. Alterações e Suspensão:
+O desenvolvedor se reserva o direito de modificar, interromper ou suspender a plataforma, total ou parcialmente, a qualquer momento, sem aviso prévio. O desenvolvedor
+
+ não será responsável perante o usuário ou terceiros por qualquer modificação, interrupção ou suspensão da plataforma.
+
+7. Links para Sites de Terceiros:
+A plataforma pode conter links para sites de terceiros. Esses links são fornecidos apenas para conveniência do usuário. O desenvolvedor não tem controle sobre o conteúdo desses sites de terceiros e não assume qualquer responsabilidade por eles. O acesso e uso de tais sites de terceiros são de responsabilidade exclusiva do usuário.
+
+8. Sigilo e Compartilhamento:
+Os usuários concordam em manter o sigilo das informações do aplicativo, incluindo informações sobre o desenvolvedor, atalhos, resultados e todas as funcionalidades da plataforma. O compartilhamento desta ferramenta com terceiros só é permitido mediante autorização do gerente/diretor, sendo o usuário responsável por quaisquer transtornos que essa ação possa gerar.
+
+9. Política de Uso:
+Todos os usuários devem concordar com a política de uso estabelecida. Além disso, comprometem-se a periodicamente ler as informações presentes na seção de login em: "Sobre &gt; Política de Uso".
+
+10. Jurisdição e Lei Aplicável:
+Estes termos de uso serão regidos e interpretados de acordo com as leis do país em que o desenvolvedor está localizado. Qualquer disputa decorrente ou relacionada a estes termos de uso estará sujeita à jurisdição exclusiva dos tribunais competentes desse país.
+
+Ao clicar em "Continuar" ou utilizar a plataforma, você concorda com todos os termos de uso estabelecidos e reconhece que leu, compreendeu e concorda em se submeter a eles.
+
+
+
+
+
+</value>
+  </data>
+</root>

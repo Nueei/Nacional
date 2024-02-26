@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC9FE51C-FC10-485C-834F-2BB9F392B62E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Nacional_Analise_de_Credito.My.MyApplication</StartupObject>
+    <RootNamespace>Nacional_Analise_de_Credito</RootNamespace>
+    <AssemblyName>Nacional Analise de Credito</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Nacional Analise de Credito.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Nacional Analise de Credito.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>nacional.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Nacional\Nacional\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurações\Classes\Config_Class.vb" />
+    <Compile Include="Configurações\Classes\ValidarCpf.vb" />
+    <Compile Include="Configurações\Forms\Analise\DadosPessoais.Designer.vb">
+      <DependentUpon>DadosPessoais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Analise\DadosPessoais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\Recusa.Designer.vb">
+      <DependentUpon>Recusa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\Recusa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\ResultadoFinanciamento.Designer.vb">
+      <DependentUpon>ResultadoFinanciamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\ResultadoFinanciamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\ResultadoConsorcio.Designer.vb">
+      <DependentUpon>ResultadoConsorcio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Resultados\ResultadoConsorcio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Settings\AdministrarUsuarios.Designer.vb">
+      <DependentUpon>AdministrarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Settings\AdministrarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Settings\Finan_Config.Designer.vb">
+      <DependentUpon>Finan_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Settings\Finan_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Forms\Politicas_USO.Designer.vb">
+      <DependentUpon>Politicas_USO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configurações\Forms\Politicas_USO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Bank_Form.Designer.vb">
+      <DependentUpon>Main_Bank_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Bank_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configurações\Forms\Analise\DadosPessoais.resx">
+      <DependentUpon>DadosPessoais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Resultados\Recusa.resx">
+      <DependentUpon>Recusa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Resultados\ResultadoFinanciamento.resx">
+      <DependentUpon>ResultadoFinanciamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Resultados\ResultadoConsorcio.resx">
+      <DependentUpon>ResultadoConsorcio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Settings\AdministrarUsuarios.resx">
+      <DependentUpon>AdministrarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Settings\Finan_Config.resx">
+      <DependentUpon>Finan_Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurações\Forms\Politicas_USO.resx">
+      <DependentUpon>Politicas_USO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Bank_Form.resx">
+      <DependentUpon>Main_Bank_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carregamentos\basic_load_preto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Random\whatsapp-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carregamentos\RED_LOAD_GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround\Analise_BG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Random\Alternative_BG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nacional.ico" />
+    <None Include="Resources\teste.png" />
+    <None Include="Resources\Banco_Central_logo.png" />
+    <None Include="Resources\Resultado_BG1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
